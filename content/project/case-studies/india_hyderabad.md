@@ -1,12 +1,13 @@
 ---
+type: "page"
 title: "QGIS Trainings at NIRD Jaipur Centre, India"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/india_hyderabad1.png"
-section: "project"
-type: "case-study"
+
 ---
+
 {{< content-start >}}
 
 # QGIS Trainings at NIRD Jaipur Centre, India

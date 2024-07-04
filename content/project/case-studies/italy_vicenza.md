@@ -1,12 +1,13 @@
 ---
+type: "page"
 title: "Using QGIS for urban planning in the municipality of Montecchio Maggiore, Vicenza, Italy"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/italy_vicenza1.png"
-section: "project"
-type: "case-study"
+
 ---
+
 {{< content-start >}}
 
 # Using QGIS for urban planning in the municipality of Montecchio Maggiore, Vicenza, Italy

@@ -1,12 +1,13 @@
 ---
+type: "page"
 title: "QGIS geoprocessing model to simplify first level seismic microzonation analysis"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/italy_igag1.png"
-section: "project"
-type: "case-study"
+
 ---
+
 {{< content-start >}}
 
 # QGIS geoprocessing model to simplify first level seismic microzonation analysis

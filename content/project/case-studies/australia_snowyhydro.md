@@ -1,12 +1,13 @@
 ---
+type: "page"
 title: "Using the processing toolbox to automate snow classification"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/australia_snowyhydro1.jpg"
-section: "project"
-type: "case-study"
+
 ---
+
 {{< content-start >}}
 
 # Using the processing toolbox to automate snow classification

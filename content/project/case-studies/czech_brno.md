@@ -1,12 +1,13 @@
 ---
+type: "page"
 title: "QGIS as major GIS software in the Laboratory on Experimental and Applied Geography"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/czech_brno1.jpg"
-section: "project"
-type: "case-study"
+
 ---
+
 {{< content-start >}}
 
 # QGIS as major GIS software in the Laboratory on Experimental and Applied Geography

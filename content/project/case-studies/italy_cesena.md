@@ -1,12 +1,13 @@
 ---
+type: "page"
 title: "QGIS to describe the Cesena\'s Wall"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/italy_cesena1.png"
-section: "project"
-type: "case-study"
+
 ---
+
 {{< content-start >}}
 
 # QGIS to describe the Cesena\'s Wall

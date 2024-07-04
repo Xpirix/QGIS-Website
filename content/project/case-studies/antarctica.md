@@ -1,12 +1,13 @@
 ---
+type: "page"
 title: "Quantarctica: An Antarctic GIS package"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/quantarctica.jpg"
-section: "project"
-type: "case-study"
+
 ---
+
 {{< content-start >}}
 
 # Quantarctica: An Antarctic GIS package
