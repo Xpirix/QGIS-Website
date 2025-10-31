@@ -8,8 +8,7 @@ on:
 
 jobs:
   scrape:
-    runs-on: ubuntu-latest
-    if: github.repository_owner == 'qgis'
+    runs-on: self-hosted
     steps:
     - name: '🛒 Checkout QGIS Website'
       uses: actions/checkout@v5
