@@ -2,10 +2,30 @@
 # -*- coding: utf-8 -*-
 
 import os
+import re
 import requests
 import shutil
 from urllib.parse import urlparse
 import json
+
+def sanitize_filename(filename):
+    """
+    Sanitize a filename to prevent path traversal attacks.
+    Removes any path separators and only allows alphanumeric characters, 
+    hyphens, underscores, and dots (but not at the start).
+    """
+    # Remove any path separators
+    filename = os.path.basename(filename)
+    # Remove leading dots and path separators
+    filename = filename.lstrip('.').lstrip('/')
+    # Only allow safe characters: alphanumeric, dash, underscore, and single dots
+    filename = re.sub(r'[^a-zA-Z0-9._-]', '_', filename)
+    # Prevent double dots
+    filename = re.sub(r'\.\.+', '.', filename)
+    # Ensure filename is not empty after sanitization
+    if not filename:
+        filename = 'default'
+    return filename
 
 class HubHarvester:
   def __init__(self, resource_type, api_url, output_dir):
@@ -53,7 +73,10 @@ class HubHarvester:
     # Parse the thumbnail URL to get the file name
     path = urlparse(thumbnail_url).path
     image_ext = os.path.splitext(path)[1]
-    image_name = f"{uuid}{image_ext}"
+    # Sanitize uuid and extension to prevent path traversal
+    uuid_safe = sanitize_filename(uuid)
+    image_ext_safe = sanitize_filename(image_ext)
+    image_name = f"{uuid_safe}{image_ext_safe}"
 
     # Download the thumbnail
     image_path = os.path.join(self.output_dir, image_name)
@@ -86,7 +109,7 @@ showcase: "{self.resource_type}"
 ---
 """
     # Write the markdown file
-    md_filename = os.path.join(self.output_dir, f"{uuid}.md")
+    md_filename = os.path.join(self.output_dir, f"{uuid_safe}.md")
     with open(md_filename, "w", encoding="utf-8") as f:
       f.write(content)
       print(f"{self.resource_type.capitalize()} markdown file created: {md_filename}")
