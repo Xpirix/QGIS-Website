@@ -27,6 +27,16 @@ def sanitize_filename(filename):
         filename = 'default'
     return filename
 
+def sanitize_extension(extension):
+    """
+    Sanitize a file extension to prevent path traversal attacks.
+    Properly handles the leading dot in extensions.
+    """
+    if extension.startswith('.'):
+        return '.' + sanitize_filename(extension[1:])
+    else:
+        return sanitize_filename(extension)
+
 def validate_uuid(uuid_string):
     """
     Validate that a string is a valid UUID format.
@@ -87,11 +97,7 @@ class HubHarvester:
     image_ext = os.path.splitext(path)[1]
     # Validate UUID format and sanitize extension to prevent path traversal
     uuid_safe = validate_uuid(uuid)
-    # Remove the leading dot before sanitization, then add it back
-    if image_ext.startswith('.'):
-        image_ext_safe = '.' + sanitize_filename(image_ext[1:])
-    else:
-        image_ext_safe = sanitize_filename(image_ext)
+    image_ext_safe = sanitize_extension(image_ext)
     image_name = f"{uuid_safe}{image_ext_safe}"
 
     # Download the thumbnail

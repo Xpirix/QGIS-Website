@@ -196,6 +196,9 @@ function param(name) {
     return decodeURIComponent((location.search.split(name + '=')[1] || '').split('&')[0]).replace(/\+/g, ' ');
 }
 function escapeHtml(text) {
+    if (text == null || text === undefined) {
+        return '';
+    }
     var map = {
         '&': '&amp;',
         '<': '&lt;',
@@ -203,5 +206,5 @@ function escapeHtml(text) {
         '"': '&quot;',
         "'": '&#039;'
     };
-    return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+    return String(text).replace(/[&<>"']/g, function(m) { return map[m]; });
 }

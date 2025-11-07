@@ -37,6 +37,16 @@ def sanitize_filename(filename):
         filename = 'default'
     return filename
 
+def sanitize_extension(extension):
+    """
+    Sanitize a file extension to prevent path traversal attacks.
+    Properly handles the leading dot in extensions.
+    """
+    if extension.startswith('.'):
+        return '.' + sanitize_filename(extension[1:])
+    else:
+        return sanitize_filename(extension)
+
 ### Funders
 def fetch_funders(url: str, past_members=False):
     """
@@ -69,11 +79,7 @@ def fetch_funders(url: str, past_members=False):
         path = urlparse(image_url).path
         image_ext = os.path.splitext(path)[1]
         # Sanitize the extension to prevent path traversal
-        # Remove the leading dot before sanitization, then add it back
-        if image_ext.startswith('.'):
-            image_ext = '.' + sanitize_filename(image_ext[1:])
-        else:
-            image_ext = sanitize_filename(image_ext)
+        image_ext = sanitize_extension(image_ext)
         image_name = f"{member_slug}{image_ext}"
 
         content = f"""---
@@ -134,11 +140,7 @@ def fetch_flickr_screenshots(showcase_type, rss_url):
         path = urlparse(image_url).path
         image_ext = os.path.splitext(path)[1]
         # Sanitize the extension to prevent path traversal
-        # Remove the leading dot before sanitization, then add it back
-        if image_ext.startswith('.'):
-            image_ext = '.' + sanitize_filename(image_ext[1:])
-        else:
-            image_ext = sanitize_filename(image_ext)
+        image_ext = sanitize_extension(image_ext)
         name = sanitize_filename(os.path.basename(os.path.normpath(image_url)))
         image_name = f"{name}{image_ext}"
 
