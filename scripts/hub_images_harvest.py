@@ -27,6 +27,18 @@ def sanitize_filename(filename):
         filename = 'default'
     return filename
 
+def validate_uuid(uuid_string):
+    """
+    Validate that a string is a valid UUID format.
+    Returns the UUID if valid, otherwise returns a sanitized version.
+    """
+    # UUID format: 8-4-4-4-12 hexadecimal characters
+    uuid_pattern = re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$', re.IGNORECASE)
+    if uuid_pattern.match(str(uuid_string)):
+        return uuid_string
+    # If not a valid UUID, sanitize it
+    return sanitize_filename(str(uuid_string))
+
 class HubHarvester:
   def __init__(self, resource_type, api_url, output_dir):
     self.resource_type = resource_type  # 'map' or 'screenshot'
@@ -73,9 +85,13 @@ class HubHarvester:
     # Parse the thumbnail URL to get the file name
     path = urlparse(thumbnail_url).path
     image_ext = os.path.splitext(path)[1]
-    # Sanitize uuid and extension to prevent path traversal
-    uuid_safe = sanitize_filename(uuid)
-    image_ext_safe = sanitize_filename(image_ext)
+    # Validate UUID format and sanitize extension to prevent path traversal
+    uuid_safe = validate_uuid(uuid)
+    # Remove the leading dot before sanitization, then add it back
+    if image_ext.startswith('.'):
+        image_ext_safe = '.' + sanitize_filename(image_ext[1:])
+    else:
+        image_ext_safe = sanitize_filename(image_ext)
     image_name = f"{uuid_safe}{image_ext_safe}"
 
     # Download the thumbnail

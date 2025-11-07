@@ -69,8 +69,12 @@ def fetch_funders(url: str, past_members=False):
         path = urlparse(image_url).path
         image_ext = os.path.splitext(path)[1]
         # Sanitize the extension to prevent path traversal
-        image_ext = sanitize_filename(image_ext)
-        image_name = "%s.%s" % (member_slug, image_ext)
+        # Remove the leading dot before sanitization, then add it back
+        if image_ext.startswith('.'):
+            image_ext = '.' + sanitize_filename(image_ext[1:])
+        else:
+            image_ext = sanitize_filename(image_ext)
+        image_name = f"{member_slug}{image_ext}"
 
         content = f"""---
 # ⚠️  AUTOMATED FILE - DO NOT EDIT MANUALLY!
@@ -130,9 +134,13 @@ def fetch_flickr_screenshots(showcase_type, rss_url):
         path = urlparse(image_url).path
         image_ext = os.path.splitext(path)[1]
         # Sanitize the extension to prevent path traversal
-        image_ext = sanitize_filename(image_ext)
+        # Remove the leading dot before sanitization, then add it back
+        if image_ext.startswith('.'):
+            image_ext = '.' + sanitize_filename(image_ext[1:])
+        else:
+            image_ext = sanitize_filename(image_ext)
         name = sanitize_filename(os.path.basename(os.path.normpath(image_url)))
-        image_name = "%s.%s" % (name, image_ext)
+        image_name = f"{name}{image_ext}"
 
         entry_date = entry.published.strftime("%Y-%m-%d")
         print(entry_date)
