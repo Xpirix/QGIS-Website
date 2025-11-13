@@ -1,0 +1,98 @@
+{{ with index .Site.Data.conf }}
+<div class="warning-box">
+    <strong>⚠️ Notice:</strong> The QGIS installers for macOS are currently <strong>outdated</strong> and do not reflect the latest version of QGIS. 
+    If you need newer features or fixes, please consider installing QGIS via 
+    <a href="{{ absURL "resources/installation-guide/#macports" }}">MacPorts</a>. 
+    We are working on new, solid macOS builds for QGIS 4. If you wish to be an early beta tester, you can test a preview build at 
+    <a href="https://github.com/opengisch/qgis-notarize">this repository</a>.
+</div>
+
+<div class="download-cards">
+    <!-- LTR Version Card -->
+    <div class="download-card">
+        <div class="download-card-header">
+            <h3 class="download-card-title">
+                Long Term Release
+                <span class="version-badge ltr">
+                    LTR
+                    <span class="info-tooltip" data-tooltip="Most stable version for macOS">i</span>
+                </span>
+            </h3>
+        </div>
+        <p class="download-card-description">
+            Long Term Release version for macOS. Provides the most stable experience.
+        </p>
+        <div class="download-buttons">
+            <a class="download-button" 
+               href="/downloads/macos/qgis-macos-ltr.dmg"
+               onclick="thanks(this)"
+               download>
+                Download LTR for macOS
+            </a>
+        </div>
+    </div>
+
+    <!-- Regular Version Card -->
+    <div class="download-card">
+        <div class="download-card-header">
+            <h3 class="download-card-title">
+                Regular Release
+                <span class="version-badge latest">
+                    Regular
+                    <span class="info-tooltip" data-tooltip="Regular release version for macOS">i</span>
+                </span>
+            </h3>
+        </div>
+        <p class="download-card-description">
+            Regular release version for macOS with recent features.
+        </p>
+        <div class="download-buttons">
+            <a class="download-button" 
+               href="/downloads/macos/qgis-macos-pr.dmg"
+               onclick="thanks(this)"
+               download>
+                Download Regular for macOS
+            </a>
+        </div>
+    </div>
+
+    <!-- MacPorts Alternative Card -->
+    <div class="download-card">
+        <div class="download-card-header">
+            <h3 class="download-card-title">
+                MacPorts Installation
+                <span class="version-badge">Alternative</span>
+            </h3>
+        </div>
+        <p class="download-card-description">
+            For native support of both Intel x86 and Apple ARM architectures, together with the latest versions of key components 
+            (e.g. GDAL, PDAL, GRASS GIS), we recommend using MacPorts.
+        </p>
+        <div class="download-buttons">
+            <a class="download-button secondary" 
+               href="{{ absURL "resources/installation-guide/#macports" }}">
+                View MacPorts Instructions
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="warning-box">
+    <strong>💁 Tips for first launch:</strong>
+    <p style="margin-top: 0.5rem;">
+        After installing QGIS, the first launch attempt may fail due to Apple's security framework.
+    </p>
+    <p style="margin-top: 0.5rem;">
+        <strong>For macOS Sonoma (14) and earlier:</strong> To enable QGIS, <strong>control-click</strong> (hold the control key and click) 
+        on its icon in your Applications folder and select <em>Open</em> in the context menu. A confirmation dialog will display where you 
+        need to click the <em>Open</em> button again. This only has to be done once.
+    </p>
+    <p style="margin-top: 0.5rem;">
+        <strong>For macOS Sequoia (15) and newer:</strong> To enable QGIS, <strong>control-click</strong> (hold the control key and click) 
+        its icon in your Applications folder and select <em>Open</em> from the context menu. A warning dialog will appear; click the 
+        <em>Done</em> button. Next, navigate to <em>System Settings &gt; Privacy &amp; Security</em> and scroll to the <em>Security</em> section. 
+        You should see a message stating that <em>"QGIS" was blocked to protect your Mac</em>. Click <em>Open Anyway</em>. 
+        A confirmation dialog will appear; click <em>Open Anyway</em> again. This only has to be done once.
+    </p>
+</div>
+{{ end }}

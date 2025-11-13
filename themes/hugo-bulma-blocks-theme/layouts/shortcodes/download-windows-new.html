@@ -1,0 +1,92 @@
+{{ with index .Site.Data.conf }}
+<div class="download-cards">
+    <!-- Online Installer Card -->
+    <div class="download-card">
+        <div class="download-card-header">
+            <h3 class="download-card-title">
+                OSGeo4W Network Installer
+                <span class="version-badge">Recommended</span>
+            </h3>
+        </div>
+        <p class="download-card-description">
+            This installer is the best way to keep QGIS up to date, run multiple versions on your system, 
+            and keep the load on our download servers to a minimum. 
+            <a href="{{ absURL "resources/installation-guide#online-osgeo4w-installer" }}">Learn more</a>
+        </p>
+        <div class="download-buttons">
+            <a class="download-button" 
+               href="https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe"
+               onclick="thanks(this)"
+               download>
+                Download Installer
+            </a>
+        </div>
+    </div>
+
+    <!-- LTR Standalone Card -->
+    <div class="download-card">
+        <div class="download-card-header">
+            <h3 class="download-card-title">
+                Long Term Release
+                <span class="version-badge ltr">
+                    {{ .ltrversion }}
+                    <span class="info-tooltip" data-tooltip="QGIS {{ .ltrrelease }} '{{ .ltrcodename }}' - Most stable version">i</span>
+                </span>
+            </h3>
+        </div>
+        <p class="download-card-description">
+            Standalone installer for the Long Term Release version. Best for users who value stability over having the latest features.
+            <a href="{{ absURL "resources/installation-guide#offline-standalone-installers" }}">Learn more</a>
+        </p>
+        <div class="download-buttons">
+            <a class="download-button" 
+               href="{{ .ltr_msi }}"
+               onclick="thanks(this)"
+               download>
+                Download LTR ({{ .ltrversion }})
+            </a>
+            <a class="download-button secondary" 
+               href="{{ .ltr_qt6_msi }}"
+               onclick="thanks(this)"
+               download>
+                Download with Qt6 (experimental)
+            </a>
+        </div>
+    </div>
+
+    <!-- Latest Release Standalone Card -->
+    <div class="download-card">
+        <div class="download-card-header">
+            <h3 class="download-card-title">
+                Latest Release
+                <span class="version-badge latest">
+                    {{ .version }}
+                    <span class="info-tooltip" data-tooltip="QGIS {{ .release }} '{{ .codename }}' released on {{ .releasedate }}">i</span>
+                </span>
+            </h3>
+        </div>
+        <p class="download-card-description">
+            Standalone installer for the latest release version with newest features and improvements.
+            <a href="{{ absURL "resources/installation-guide#offline-standalone-installers" }}">Learn more</a>
+        </p>
+        <div class="download-buttons">
+            <a class="download-button" 
+               href="{{ .lr_msi }}"
+               onclick="thanks(this)"
+               download>
+                Download Latest ({{ .version }})
+            </a>
+            <a class="download-button secondary" 
+               href="{{ .lr_qt6_msi }}"
+               onclick="thanks(this)"
+               download>
+                Download with Qt6 (experimental)
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="warning-box">
+    <strong>Note:</strong> Since QGIS 3.20 we only ship 64-bit Windows executables.
+</div>
+{{ end }}
