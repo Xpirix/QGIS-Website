@@ -24,174 +24,12 @@
     }
 }
 
-/* Download Cards */
-.download-cards {
-    display: grid;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.download-card {
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
-    padding: 1.5rem;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-}
-
-.download-card:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
-}
-
-.download-card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-.download-card-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.version-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 0.25rem 0.75rem;
-    background: #f0f0f0;
-    border-radius: 12px;
-    font-size: 0.875rem;
-    font-weight: 500;
-}
-
-.version-badge.ltr {
-    background: #589632;
-    color: white;
-}
-
-.version-badge.latest {
-    background: #4a90e2;
-    color: white;
-}
-
-.info-tooltip {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #ddd;
-    color: #666;
-    font-size: 0.75rem;
-    font-weight: bold;
-    cursor: help;
-    margin-left: 0.25rem;
-}
-
-.info-tooltip:hover::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: #333;
-    color: white;
-    border-radius: 6px;
-    white-space: nowrap;
-    font-size: 0.875rem;
-    font-weight: normal;
-    z-index: 10;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.info-tooltip:hover::before {
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 6px solid transparent;
-    border-top-color: #333;
-    z-index: 10;
-}
-
-.download-card-description {
-    color: #666;
-    margin-bottom: 1rem;
-    line-height: 1.6;
-}
-
-.download-button {
-    display: inline-block;
-    padding: 0.75rem 2rem;
-    background: #589632;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.download-button:hover {
-    background: #467625;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(88, 150, 50, 0.3);
-    color: white;
-}
-
-.download-button.secondary {
-    background: white;
-    color: #589632;
-    border: 2px solid #589632;
-}
-
-.download-button.secondary:hover {
-    background: #f5f5f5;
-    color: #467625;
-    border-color: #467625;
-}
-
-.download-buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-/* Warning boxes */
-.warning-box {
-    padding: 1rem 1.5rem;
-    background: #fff3cd;
-    border-left: 4px solid #ffc107;
-    border-radius: 6px;
-    margin: 1rem 0;
-}
-
-.warning-box strong {
-    color: #856404;
-}
-
 /* Linux distributions list */
 .distro-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 0.75rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 .distro-link {
@@ -221,16 +59,6 @@
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
-    .download-buttons {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    
-    .download-button {
-        width: 100%;
-        text-align: center;
-    }
-    
     .distro-list {
         grid-template-columns: 1fr;
     }

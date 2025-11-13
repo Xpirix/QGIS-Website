@@ -16,42 +16,6 @@
         return 'windows';
     }
 
-    // Get download URL for platform
-    function getDownloadUrl(platform) {
-        const urls = {
-            'windows': 'https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe',
-            'macos': '/downloads/macos/qgis-macos-ltr.dmg',
-            'linux': '/resources/installation-guide#linux',
-            'mobile': 'https://play.google.com/store/apps/details?id=ch.opengis.qfield',
-            'other': '/downloads/qgis-latest-ltr.tar.bz2'
-        };
-        return urls[platform] || urls['windows'];
-    }
-
-    // Get download button text for platform
-    function getDownloadButtonText(platform) {
-        const texts = {
-            'windows': 'Download for Windows',
-            'macos': 'Download for macOS',
-            'linux': 'Download for Linux',
-            'mobile': 'Download for Mobile',
-            'other': 'Download Source Code'
-        };
-        return texts[platform] || 'Download QGIS';
-    }
-
-    // Get download subtitle for platform
-    function getDownloadSubtitle(platform) {
-        const subtitles = {
-            'windows': 'Long Term Release (Recommended)',
-            'macos': 'Long Term Release',
-            'linux': 'View Installation Instructions',
-            'mobile': 'QField for Android & iOS',
-            'other': 'Source Code & Other Platforms'
-        };
-        return subtitles[platform] || 'Long Term Release';
-    }
-
     // Get platform display name with emoji
     function getPlatformDisplayName(platform) {
         const names = {
@@ -67,14 +31,12 @@
     // Initialize platform selector on page load
     function initPlatformSelector() {
         const dropdown = document.getElementById('platform-dropdown');
-        const downloadButton = document.getElementById('primary-download-btn');
-        const downloadBtnText = document.getElementById('download-btn-text');
-        const downloadSubtitle = document.getElementById('download-subtitle');
         const selectedPlatformText = document.getElementById('selected-platform-text');
         const platformOptions = document.querySelectorAll('.platform-option');
         const platformContents = document.querySelectorAll('.platform-content');
+        const bannerButtons = document.querySelectorAll('.platform-buttons');
         
-        if (!dropdown || !downloadButton) {
+        if (!dropdown) {
             return; // Not on download page
         }
 
@@ -95,8 +57,8 @@
                 // Activate platform content
                 activatePlatform(platform);
                 
-                // Update download button
-                updateDownloadButton(platform);
+                // Update banner download buttons
+                updateBannerButtons(platform);
                 
                 // Close dropdown (Bulma will handle this, but we can force it)
                 dropdown.classList.remove('is-active');
@@ -108,30 +70,20 @@
             selectedPlatformText.textContent = getPlatformDisplayName(defaultPlatform);
         }
         activatePlatform(defaultPlatform);
-        updateDownloadButton(defaultPlatform);
+        updateBannerButtons(defaultPlatform);
 
-        // Update download button for current platform
-        function updateDownloadButton(platform) {
-            const url = getDownloadUrl(platform);
-            const text = getDownloadButtonText(platform);
-            const subtitle = getDownloadSubtitle(platform);
+        // Update banner download buttons for current platform
+        function updateBannerButtons(platform) {
+            // Hide all platform buttons
+            bannerButtons.forEach(btn => {
+                btn.style.display = 'none';
+            });
             
-            if (downloadBtnText) {
-                downloadBtnText.textContent = text;
+            // Show buttons for selected platform
+            const activePlatformButtons = document.querySelector(`.platform-buttons[data-platform="${platform}"]`);
+            if (activePlatformButtons) {
+                activePlatformButtons.style.display = 'block';
             }
-            if (downloadSubtitle) {
-                downloadSubtitle.textContent = subtitle;
-            }
-            
-            // Update click handler
-            downloadButton.onclick = function(e) {
-                e.preventDefault();
-                if (platform === 'linux') {
-                    window.location.href = url;
-                } else {
-                    window.location.href = url;
-                }
-            };
         }
 
         // Make dropdown work with click

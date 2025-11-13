@@ -1,5 +1,5 @@
 {{ with index .Site.Data.conf }}
-<div class="warning-box">
+<div class="notification is-warning is-light">
     <strong>⚠️ Notice:</strong> The QGIS installers for macOS are currently <strong>outdated</strong> and do not reflect the latest version of QGIS. 
     If you need newer features or fixes, please consider installing QGIS via 
     <a href="{{ absURL "resources/installation-guide/#macports" }}">MacPorts</a>. 
@@ -7,77 +7,15 @@
     <a href="https://github.com/opengisch/qgis-notarize">this repository</a>.
 </div>
 
-<div class="download-cards">
-    <!-- LTR Version Card -->
-    <div class="download-card">
-        <div class="download-card-header">
-            <h3 class="download-card-title">
-                Long Term Release
-                <span class="version-badge ltr">
-                    LTR
-                    <span class="info-tooltip" data-tooltip="Most stable version for macOS">i</span>
-                </span>
-            </h3>
-        </div>
-        <p class="download-card-description">
-            Long Term Release version for macOS. Provides the most stable experience.
-        </p>
-        <div class="download-buttons">
-            <a class="download-button" 
-               href="/downloads/macos/qgis-macos-ltr.dmg"
-               onclick="thanks(this)"
-               download>
-                Download LTR for macOS
-            </a>
-        </div>
-    </div>
-
-    <!-- Regular Version Card -->
-    <div class="download-card">
-        <div class="download-card-header">
-            <h3 class="download-card-title">
-                Regular Release
-                <span class="version-badge latest">
-                    Regular
-                    <span class="info-tooltip" data-tooltip="Regular release version for macOS">i</span>
-                </span>
-            </h3>
-        </div>
-        <p class="download-card-description">
-            Regular release version for macOS with recent features.
-        </p>
-        <div class="download-buttons">
-            <a class="download-button" 
-               href="/downloads/macos/qgis-macos-pr.dmg"
-               onclick="thanks(this)"
-               download>
-                Download Regular for macOS
-            </a>
-        </div>
-    </div>
-
-    <!-- MacPorts Alternative Card -->
-    <div class="download-card">
-        <div class="download-card-header">
-            <h3 class="download-card-title">
-                MacPorts Installation
-                <span class="version-badge">Alternative</span>
-            </h3>
-        </div>
-        <p class="download-card-description">
-            For native support of both Intel x86 and Apple ARM architectures, together with the latest versions of key components 
-            (e.g. GDAL, PDAL, GRASS GIS), we recommend using MacPorts.
-        </p>
-        <div class="download-buttons">
-            <a class="download-button secondary" 
-               href="{{ absURL "resources/installation-guide/#macports" }}">
-                View MacPorts Instructions
-            </a>
-        </div>
-    </div>
+<div class="content mt-4">
+    <p class="is-size-6">
+        For native support of both Intel x86 and Apple ARM architectures, together with the latest versions of key components 
+        (e.g. GDAL, PDAL, GRASS GIS), we recommend using 
+        <a href="{{ absURL "resources/installation-guide/#macports" }}">MacPorts</a>.
+    </p>
 </div>
 
-<div class="warning-box">
+<div class="notification is-info is-light mt-4">
     <strong>💁 Tips for first launch:</strong>
     <p style="margin-top: 0.5rem;">
         After installing QGIS, the first launch attempt may fail due to Apple's security framework.
