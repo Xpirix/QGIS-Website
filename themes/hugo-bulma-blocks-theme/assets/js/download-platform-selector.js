@@ -16,77 +16,100 @@
         return 'windows';
     }
 
+    // Get download URL for platform
+    function getDownloadUrl(platform) {
+        const urls = {
+            'windows': 'https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe',
+            'macos': '/downloads/macos/qgis-macos-ltr.dmg',
+            'linux': '/resources/installation-guide#linux',
+            'mobile': 'https://play.google.com/store/apps/details?id=ch.opengis.qfield',
+            'other': '/downloads/qgis-latest-ltr.tar.bz2'
+        };
+        return urls[platform] || urls['windows'];
+    }
+
+    // Get download button text for platform
+    function getDownloadButtonText(platform) {
+        const texts = {
+            'windows': 'Download for Windows',
+            'macos': 'Download for macOS',
+            'linux': 'Download for Linux',
+            'mobile': 'Download for Mobile',
+            'other': 'Download Source Code'
+        };
+        return texts[platform] || 'Download QGIS';
+    }
+
+    // Get download subtitle for platform
+    function getDownloadSubtitle(platform) {
+        const subtitles = {
+            'windows': 'Long Term Release (Recommended)',
+            'macos': 'Long Term Release',
+            'linux': 'View Installation Instructions',
+            'mobile': 'QField for Android & iOS',
+            'other': 'Source Code & Other Platforms'
+        };
+        return subtitles[platform] || 'Long Term Release';
+    }
+
     // Initialize platform selector on page load
     function initPlatformSelector() {
-        const platformTabs = document.querySelectorAll('.platform-tab');
+        const dropdown = document.getElementById('platform-dropdown');
+        const downloadButton = document.getElementById('primary-download-button');
+        const downloadSubtitle = document.getElementById('download-button-subtitle');
         const platformContents = document.querySelectorAll('.platform-content');
         
-        if (platformTabs.length === 0 || platformContents.length === 0) {
+        if (!dropdown || !downloadButton) {
             return; // Not on download page
         }
 
-        // Detect and activate default platform
-        const defaultPlatform = detectOS();
-        let activated = false;
+        // Detect and set default platform
+        const defaultPlatform = checkStoredPreference() || detectOS();
+        dropdown.value = defaultPlatform;
+        activatePlatform(defaultPlatform);
 
-        // Try to activate the detected platform
-        platformTabs.forEach(tab => {
-            if (tab.dataset.platform === defaultPlatform) {
-                activatePlatform(defaultPlatform);
-                activated = true;
+        // Update download button for current platform
+        function updateDownloadButton(platform) {
+            const url = getDownloadUrl(platform);
+            const text = getDownloadButtonText(platform);
+            const subtitle = getDownloadSubtitle(platform);
+            
+            downloadButton.querySelector('.download-text').textContent = text;
+            if (downloadSubtitle) {
+                downloadSubtitle.textContent = subtitle;
             }
-        });
-
-        // If no match found, activate first tab
-        if (!activated && platformTabs.length > 0) {
-            const firstPlatform = platformTabs[0].dataset.platform;
-            activatePlatform(firstPlatform);
+            
+            // Update click handler
+            downloadButton.onclick = function(e) {
+                e.preventDefault();
+                if (platform === 'linux') {
+                    window.location.href = url;
+                } else {
+                    window.open(url, '_blank');
+                    // Redirect to thank you page after a short delay
+                    setTimeout(function() {
+                        window.location.href = '/download/thank-you';
+                    }, 500);
+                }
+            };
         }
 
-        // Add click event listeners to all tabs
-        platformTabs.forEach(tab => {
-            tab.addEventListener('click', function() {
-                const platform = this.dataset.platform;
-                activatePlatform(platform);
-            });
+        // Handle dropdown change
+        dropdown.addEventListener('change', function() {
+            const platform = this.value;
+            activatePlatform(platform);
+            updateDownloadButton(platform);
         });
 
-        // Add keyboard navigation
-        platformTabs.forEach((tab, index) => {
-            tab.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    this.click();
-                } else if (e.key === 'ArrowRight') {
-                    e.preventDefault();
-                    const nextTab = platformTabs[index + 1] || platformTabs[0];
-                    nextTab.focus();
-                } else if (e.key === 'ArrowLeft') {
-                    e.preventDefault();
-                    const prevTab = platformTabs[index - 1] || platformTabs[platformTabs.length - 1];
-                    prevTab.focus();
-                }
-            });
-        });
+        // Initial button setup
+        updateDownloadButton(defaultPlatform);
     }
 
     // Activate a specific platform
     function activatePlatform(platform) {
-        const platformTabs = document.querySelectorAll('.platform-tab');
         const platformContents = document.querySelectorAll('.platform-content');
 
-        // Update tabs
-        platformTabs.forEach(tab => {
-            if (tab.dataset.platform === platform) {
-                tab.classList.add('active');
-                tab.setAttribute('aria-selected', 'true');
-            } else {
-                tab.classList.remove('active');
-                tab.setAttribute('aria-selected', 'false');
-            }
-        });
-
-        // Update content
+        // Update content visibility
         platformContents.forEach(content => {
             if (content.dataset.platform === platform) {
                 content.classList.add('active');
@@ -104,11 +127,11 @@
             // localStorage might not be available
         }
 
-        // Scroll to top of download section
-        const downloadSection = document.querySelector('.download-platform-selector');
-        if (downloadSection) {
+        // Scroll to platform content (smooth scroll)
+        const activeContent = document.querySelector(`.platform-content[data-platform="${platform}"]`);
+        if (activeContent) {
             const offset = 100; // Offset for fixed header
-            const elementPosition = downloadSection.getBoundingClientRect().top;
+            const elementPosition = activeContent.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - offset;
             
             window.scrollTo({
@@ -123,9 +146,13 @@
         try {
             const storedPlatform = localStorage.getItem('qgis-preferred-platform');
             if (storedPlatform) {
-                const tab = document.querySelector(`.platform-tab[data-platform="${storedPlatform}"]`);
-                if (tab) {
-                    return storedPlatform;
+                const dropdown = document.getElementById('platform-dropdown');
+                if (dropdown) {
+                    // Check if the stored platform is a valid option
+                    const options = Array.from(dropdown.options).map(opt => opt.value);
+                    if (options.includes(storedPlatform)) {
+                        return storedPlatform;
+                    }
                 }
             }
         } catch (e) {
