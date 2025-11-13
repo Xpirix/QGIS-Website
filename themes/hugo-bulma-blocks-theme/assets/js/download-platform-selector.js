@@ -16,16 +16,16 @@
         return 'windows';
     }
 
-    // Get platform display name with emoji
+    // Get platform display name with FontAwesome icon
     function getPlatformDisplayName(platform) {
         const names = {
-            'windows': '🪟 Windows',
-            'macos': '🍏 macOS',
-            'linux': '🐧 Linux',
-            'mobile': '📱 Mobile',
-            'other': '⚙️ Other'
+            'windows': '<span class="icon"><i class="fab fa-windows"></i></span><span>Windows - Desktop OS</span>',
+            'macos': '<span class="icon"><i class="fab fa-apple"></i></span><span>macOS - Apple Desktop</span>',
+            'linux': '<span class="icon"><i class="fab fa-linux"></i></span><span>Linux - Open Source OS</span>',
+            'mobile': '<span class="icon"><i class="fas fa-mobile-alt"></i></span><span>Mobile & Tablet - Android & iOS</span>',
+            'other': '<span class="icon"><i class="fas fa-ellipsis-h"></i></span><span>Other Platforms - BSD, Source & More</span>'
         };
-        return names[platform] || '🪟 Windows';
+        return names[platform] || '<span class="icon"><i class="fab fa-windows"></i></span><span>Windows - Desktop OS</span>';
     }
 
     // Initialize platform selector on page load
@@ -51,7 +51,7 @@
                 
                 // Update selected platform text
                 if (selectedPlatformText) {
-                    selectedPlatformText.textContent = getPlatformDisplayName(platform);
+                    selectedPlatformText.innerHTML = getPlatformDisplayName(platform);
                 }
                 
                 // Activate platform content
@@ -67,7 +67,7 @@
 
         // Initial setup
         if (selectedPlatformText) {
-            selectedPlatformText.textContent = getPlatformDisplayName(defaultPlatform);
+            selectedPlatformText.innerHTML = getPlatformDisplayName(defaultPlatform);
         }
         activatePlatform(defaultPlatform);
         updateBannerButtons(defaultPlatform);

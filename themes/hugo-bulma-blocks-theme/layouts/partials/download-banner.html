@@ -4,213 +4,384 @@
 <section 
     class="hero is-primary1 is-medium has-bg-img download-hero-banner" 
     id="download-banner"
-    style="display: none; background: url('{{ absURL "/img/hegobg1.webp" }}'); background-position: center; background-size: cover;">
+    style="display: none; background: url('/img/hegobg1.webp'); background-position: center; background-size: cover;">
     <div class="hero-body">
-        <div class="columns container">
-            <div class="column is-8 is-flex hero-text has-text-left">
-                <div class="hero-container">
-                    <h1 class="title hero-title pr-3">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <!-- Left Column: Title and Description -->
+                <div class="column is-7-desktop is-12-mobile is-12-tablet">
+                    <h1 class="title hero-title">
                         Download QGIS
                     </h1>
                     <p class="subtitle hero-subtitle">
-                        Current version: <strong>QGIS {{ .release }} '{{ .codename }}'</strong>
-                    </p>
-                    <p class="subtitle hero-subtitle is-size-6">
-                        Released on {{ .releasedate }}
+                        Spatial visualization and decision-making tools for everyone
                     </p>
                 </div>
-                <div class="is-vcentered">
-                    <!-- Platform Selector Dropdown -->
-                    <div class="field has-addons download-platform-selector-field">
-                        <div class="control">
-                            <div class="dropdown" id="platform-dropdown">
-                                <div class="dropdown-trigger">
-                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                        <span id="selected-platform-text">🪟 Windows</span>
-                                        <span class="icon is-small">
-                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                        </span>
-                                    </button>
-                                </div>
-                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                                    <div class="dropdown-content">
-                                        <a href="#" class="dropdown-item platform-option" data-platform="windows">
-                                            🪟 Windows
-                                        </a>
-                                        <a href="#" class="dropdown-item platform-option" data-platform="macos">
-                                            🍏 macOS
-                                        </a>
-                                        <a href="#" class="dropdown-item platform-option" data-platform="linux">
-                                            🐧 Linux
-                                        </a>
-                                        <a href="#" class="dropdown-item platform-option" data-platform="mobile">
-                                            📱 Mobile
-                                        </a>
-                                        <a href="#" class="dropdown-item platform-option" data-platform="other">
-                                            ⚙️ Other
-                                        </a>
+                
+                <!-- Right Column: Platform Selector and Download Buttons -->
+                <div class="column is-5-desktop is-12-mobile is-12-tablet">
+                    <div class="box has-background-white" style="border-radius: 8px; color: #4D6370;">
+                        <!-- Platform Selector -->
+                        <div class="field">
+                            <label class="label has-text-dark">Choose your platform</label>
+                            <div class="control">
+                                <div class="dropdown is-fullwidth" id="platform-dropdown">
+                                    <div class="dropdown-trigger" style="width: 100%;">
+                                        <button class="button is-fullwidth is-medium" aria-haspopup="true" aria-controls="dropdown-menu" style="justify-content: space-between;">
+                                            <span class="icon-text" id="selected-platform-text">
+                                                <span class="icon"><i class="fab fa-windows"></i></span>
+                                                <span>Windows - Most Popular</span>
+                                            </span>
+                                            <span class="icon is-small">
+                                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="dropdown-menu" id="dropdown-menu" role="menu" style="width: 100%;">
+                                        <div class="dropdown-content">
+                                            <a href="#" class="dropdown-item platform-option" data-platform="windows">
+                                                <span class="icon-text">
+                                                    <span class="icon"><i class="fab fa-windows"></i></span>
+                                                    <span><strong>Windows</strong> - Desktop OS</span>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="dropdown-item platform-option" data-platform="macos">
+                                                <span class="icon-text">
+                                                    <span class="icon"><i class="fab fa-apple"></i></span>
+                                                    <span><strong>macOS</strong> - Apple Desktop</span>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="dropdown-item platform-option" data-platform="linux">
+                                                <span class="icon-text">
+                                                    <span class="icon"><i class="fab fa-linux"></i></span>
+                                                    <span><strong>Linux</strong> - Open Source OS</span>
+                                                </span>
+                                            </a>
+                                            <hr class="dropdown-divider">
+                                            <a href="#" class="dropdown-item platform-option" data-platform="mobile">
+                                                <span class="icon-text">
+                                                    <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                                                    <span><strong>Mobile & Tablet</strong> - Android & iOS</span>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="dropdown-item platform-option" data-platform="other">
+                                                <span class="icon-text">
+                                                    <span class="icon"><i class="fas fa-ellipsis-h"></i></span>
+                                                    <span><strong>Other Platforms</strong> - BSD, Source & More</span>
+                                                </span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- Platform-specific download buttons container -->
-                    <div id="banner-download-buttons" class="mt-3">
-                        <!-- Windows buttons -->
-                        <div class="platform-buttons" data-platform="windows">
-                            <div class="buttons-group mb-3">
-                                <p class="is-size-7 has-text-weight-semibold mb-2">
-                                    Long Term Release {{ .ltrversion }}
-                                    <span class="info-icon-tooltip" data-tooltip="QGIS {{ .ltrrelease }} '{{ .ltrcodename }}' - Most stable version">ⓘ</span>
-                                </p>
-                                <div class="buttons are-small">
-                                    <a class="button is-primary1" 
-                                       href="{{ .ltr_msi }}"
-                                       onclick="thanks(this)"
-                                       download>
-                                        LTR {{ .ltrversion }}
-                                    </a>
-                                    <a class="button is-light" 
-                                       href="{{ .ltr_qt6_msi }}"
-                                       onclick="thanks(this)"
-                                       download>
-                                        Qt6 (experimental)
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="buttons-group mb-3">
-                                <p class="is-size-7 has-text-weight-semibold mb-2">
-                                    Latest Release {{ .version }}
-                                    <span class="info-icon-tooltip" data-tooltip="QGIS {{ .release }} '{{ .codename }}' released on {{ .releasedate }}">ⓘ</span>
-                                </p>
-                                <div class="buttons are-small">
-                                    <a class="button is-primary1" 
-                                       href="{{ .lr_msi }}"
-                                       onclick="thanks(this)"
-                                       download>
-                                        Latest {{ .version }}
-                                    </a>
-                                    <a class="button is-light" 
-                                       href="{{ .lr_qt6_msi }}"
-                                       onclick="thanks(this)"
-                                       download>
-                                        Qt6 (experimental)
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="buttons-group">
-                                <p class="is-size-7 has-text-weight-semibold mb-2">
-                                    Network Installer (Recommended)
-                                </p>
-                                <div class="buttons are-small">
-                                    <a class="button is-primary1" 
-                                       href="https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe"
-                                       onclick="thanks(this)"
-                                       download>
-                                        OSGeo4W Installer
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- macOS buttons -->
-                        <div class="platform-buttons" data-platform="macos" style="display: none;">
-                            <div class="buttons-group mb-3">
-                                <p class="is-size-7 has-text-weight-semibold mb-2">
-                                    Long Term Release
-                                    <span class="info-icon-tooltip" data-tooltip="Most stable version for macOS">ⓘ</span>
-                                </p>
-                                <div class="buttons are-small">
-                                    <a class="button is-primary1" 
-                                       href="/downloads/macos/qgis-macos-ltr.dmg"
-                                       onclick="thanks(this)"
-                                       download>
-                                        LTR for macOS
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="buttons-group">
-                                <p class="is-size-7 has-text-weight-semibold mb-2">
-                                    Regular Release
-                                    <span class="info-icon-tooltip" data-tooltip="Regular release version for macOS">ⓘ</span>
-                                </p>
-                                <div class="buttons are-small">
-                                    <a class="button is-primary1" 
-                                       href="/downloads/macos/qgis-macos-pr.dmg"
-                                       onclick="thanks(this)"
-                                       download>
-                                        Regular for macOS
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <hr>
 
-                        <!-- Linux buttons -->
-                        <div class="platform-buttons" data-platform="linux" style="display: none;">
-                            <div class="buttons-group">
-                                <p class="is-size-7 has-text-weight-semibold mb-2">
-                                    Select your distribution below
-                                </p>
-                                <div class="buttons are-small">
-                                    <a class="button is-primary1" 
-                                       href="{{ absURL "resources/installation-guide#linux" }}">
-                                        View Installation Guide
+                        <!-- Platform-specific download buttons container -->
+                        <div id="banner-download-buttons">
+                            <!-- Windows buttons -->
+                            <div class="platform-buttons" data-platform="windows">
+                                <!-- Network Installer Section -->
+                                <div class="notification is-info is-light">
+                                    <p class="is-6 mb-2">
+                                        <strong>Network Installer (OSGeo4W)</strong>
+                                    </p>
+                                    <p class="is-size-7 mb-3">Best way to keep QGIS up to date and manage multiple versions</p>
+                                    <a class="button mr-0 is-info is-medium is-fullwidth" 
+                                        href="https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe"
+                                        onclick="thanks(this)"
+                                        download>
+                                        <span class="icon">
+                                            <i class="fas fa-cloud-download-alt"></i>
+                                        </span>
+                                        <span>Get OSGeo4W Installer</span>
                                     </a>
                                 </div>
-                            </div>
-                        </div>
+                                <!-- LTR Section -->
+                                <div class="mb-5">
+                                    <div class="level is-mobile mb-2">
+                                        <div class="level-left">
+                                            <div class="level-item">
+                                                <p class="is-size-5 has-text-weight-medium mb-0">Long Term Release {{ .ltrversion }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mb-3">
+                                        QGIS {{ .ltrrelease }} '{{ .ltrcodename }}' - Most stable version
+                                    </p>
+                                    <div class="buttons has-addons is-fullwidth">
+                                        <a class="button is-primary1 is-medium is-expanded" 
+                                            href="{{ .ltr_msi }}"
+                                            onclick="thanks(this)"
+                                            download>
+                                            <span class="icon">
+                                                <i class="fas fa-download"></i>
+                                            </span>
+                                            <span>Download LTR {{ .ltrversion }}</span>
+                                        </a>
+                                        <a class="button is-outlined is-danger is-medium is-expanded" 
+                                            href="{{ .ltr_qt6_msi }}"
+                                            onclick="thanks(this)"
+                                            download>
+                                            <span>Qt6 (experimental)</span>
+                                        </a>
+                                    </div>
+                                </div>
 
-                        <!-- Mobile buttons -->
-                        <div class="platform-buttons" data-platform="mobile" style="display: none;">
-                            <div class="buttons-group mb-3">
-                                <p class="is-size-7 has-text-weight-semibold mb-2">
-                                    QField for Android
-                                </p>
-                                <div class="buttons are-small">
-                                    <a class="button is-primary1" 
-                                       href="https://play.google.com/store/apps/details?id=ch.opengis.qfield"
-                                       target="_blank">
-                                        Download on Google Play
-                                    </a>
+                                <!-- Latest Release Section -->
+                                <div class="mb-5">
+                                    <div class="level is-mobile mb-2">
+                                        <div class="level-left">
+                                            <div class="level-item">
+                                                <p class="is-size-5 has-text-weight-medium mb-0">Latest Release {{ .version }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mb-3">
+                                        QGIS {{ .release }} '{{ .codename }}' released on {{ .releasedate }}
+                                    </p>
+                                    <div class="buttons has-addons is-fullwidth">
+                                        <a class="button is-primary1 is-outlined is-medium is-expanded" 
+                                            href="{{ .lr_msi }}"
+                                            onclick="thanks(this)"
+                                            download>
+                                            <span class="icon">
+                                                <i class="fas fa-download"></i>
+                                            </span>
+                                            <span>Download {{ .version }}</span>
+                                        </a>
+                                        <a class="button is-outlined is-danger is-medium is-expanded" 
+                                            href="{{ .lr_qt6_msi }}"
+                                            onclick="thanks(this)"
+                                            download>
+                                            <span>Qt6 (experimental)</span>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="buttons-group">
-                                <p class="is-size-7 has-text-weight-semibold mb-2">
-                                    QField for iOS
-                                </p>
-                                <div class="buttons are-small">
-                                    <a class="button is-primary1" 
-                                       href="https://apps.apple.com/app/qfield-for-qgis/id1531726814"
-                                       target="_blank">
-                                        Download on App Store
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Other platforms buttons -->
-                        <div class="platform-buttons" data-platform="other" style="display: none;">
-                            <div class="buttons-group mb-3">
-                                <p class="is-size-7 has-text-weight-semibold mb-2">
-                                    Source Code
-                                </p>
-                                <div class="buttons are-small">
-                                    <a class="button is-primary1" 
-                                       href="/downloads/qgis-latest-ltr.tar.bz2"
-                                       download>
-                                        Download Source
+                            </div>
+
+                            <!-- macOS buttons -->
+                            <div class="platform-buttons" data-platform="macos" style="display: none;">
+                                <!-- LTR Section -->
+                                <div class="mb-5">
+                                    <div class="level is-mobile mb-2">
+                                        <div class="level-left">
+                                            <div class="level-item">
+                                                <p class="is-size-5 has-text-weight-medium mb-0">Long Term Release</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mb-3">
+                                        Most stable version for macOS
+                                    </p>
+                                    <a class="button is-primary1 is-medium is-fullwidth" 
+                                        href="/downloads/macos/qgis-macos-ltr.dmg"
+                                        onclick="thanks(this)"
+                                        download>
+                                        <span class="icon">
+                                            <i class="fas fa-download"></i>
+                                        </span>
+                                        <span>Download LTR for macOS</span>
+                                    </a>
+                                </div>
+
+                                <!-- Regular Release Section -->
+                                <div class="mb-4">
+                                    <p class="title is-5 mb-2 has-text-dark">Regular Release</p>
+                                    <p class="mb-3">
+                                        Latest features for macOS
+                                    </p>
+                                    <a class="button is-primary1 is-outlined is-medium is-fullwidth" 
+                                        href="/downloads/macos/qgis-macos-pr.dmg"
+                                        onclick="thanks(this)"
+                                        download>
+                                        <span class="icon">
+                                            <i class="fas fa-download"></i>
+                                        </span>
+                                        <span>Download Regular for macOS</span>
+                                    </a>
+                                </div>
+
+                                <!-- Info notification -->
+                                <div class="notification is-warning is-light">
+                                    <p class="is-size-7">
+                                        <strong>Note:</strong> For the latest versions and native ARM support, consider using 
+                                        <a href="{{ absURL "resources/installation-guide/#macports" }}">MacPorts</a>.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Linux buttons -->
+                            <div class="platform-buttons" data-platform="linux" style="display: none;">
+                                <div class="content">
+                                    <p class="title is-5 mb-3 has-text-dark">Select your Linux distribution</p>
+                                    <p class="mb-4">
+                                        GNU/Linux is a Free operating system built on the same principles that QGIS is built on. 
+                                        Choose your distribution below for installation instructions.
+                                    </p>
+                                </div>
+                                
+                                <div class="buttons are-medium is-fullwidth mb-3">
+                                    <a class="button is-outlined is-expanded" 
+                                        href="{{ absURL "resources/installation-guide#debian--ubuntu" }}">
+                                        <span class="icon"><i class="fab fa-ubuntu"></i></span>
+                                        <span>Debian/Ubuntu</span>
+                                    </a>
+                                    <a class="button is-outlined is-expanded" 
+                                        href="{{ absURL "resources/installation-guide#fedora" }}">
+                                        <span class="icon"><i class="fab fa-fedora"></i></span>
+                                        <span>Fedora</span>
+                                    </a>
+                                    <a class="button is-outlined is-expanded" 
+                                        href="{{ absURL "resources/installation-guide#nixos" }}">
+                                        <span class="icon"><i class="fas fa-snowflake"></i></span>
+                                        <span>NixOS</span>
+                                    </a>
+                                    <a class="button is-outlined is-expanded" 
+                                        href="{{ absURL "resources/installation-guide#suse--opensuse" }}">
+                                        <span class="icon"><i class="fab fa-suse"></i></span>
+                                        <span>openSUSE</span>
+                                    </a>
+                                    <a class="button is-outlined is-expanded" 
+                                        href="{{ absURL "resources/installation-guide#mandriva" }}">
+                                        <span class="icon"><i class="fab fa-linux"></i></span>
+                                        <span>Mandriva</span>
+                                    </a>
+                                    <a class="button is-outlined is-expanded" 
+                                        href="{{ absURL "resources/installation-guide#slackware" }}">
+                                        <span class="icon"><i class="fas fa-server"></i></span>
+                                        <span>Slackware</span>
+                                    </a>
+                                    <a class="button is-outlined is-expanded" 
+                                        href="{{ absURL "resources/installation-guide#arch-linux" }}">
+                                        <span class="icon"><i class="fab fa-linux"></i></span>
+                                        <span>Arch Linux</span>
+                                    </a>
+                                    <a class="button is-outlined is-expanded" 
+                                        href="{{ absURL "resources/installation-guide#flatpak" }}">
+                                        <span class="icon"><i class="fas fa-box"></i></span>
+                                        <span>Flatpak</span>
+                                    </a>
+                                    <a class="button is-outlined is-expanded" 
+                                        href="{{ absURL "resources/installation-guide#spack" }}">
+                                        <span class="icon"><i class="fas fa-cubes"></i></span>
+                                        <span>Spack</span>
+                                    </a>
+                                    <a class="button is-link is-medium is-fullwidth" 
+                                        href="{{ absURL "resources/installation-guide#linux" }}">
+                                        <span>View Complete Installation Guide</span>
+                                        <span class="icon">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+                            <!-- Mobile buttons -->
+                            <div class="platform-buttons" data-platform="mobile" style="display: none;">
+                                <div class="content mb-4">
+                                    <p class="title is-5 mb-2 has-text-dark">QField for Mobile Devices</p>
+                                    <p class="subtitle is-6 has-text-grey">
+                                        Professional GIS data collection in the field
+                                    </p>
+                                </div>
+                                
+                                <!-- Android Section -->
+                                <div class="mb-4">
+                                    <div class="level is-mobile mb-2">
+                                        <div class="level-left">
+                                            <div class="level-item">
+                                                <p class="has-text-weight-semibold has-text-dark">QField for Android</p>
+                                            </div>
+                                        </div>
+                                        <div class="level-right">
+                                            <div class="level-item">
+                                                <span class="icon has-text-success">
+                                                    <i class="fab fa-android fa-2x"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="button is-primary1 is-medium is-fullwidth" 
+                                        href="https://play.google.com/store/apps/details?id=ch.opengis.qfield"
+                                        target="_blank">
+                                        <span class="icon">
+                                            <i class="fab fa-google-play"></i>
+                                        </span>
+                                        <span>Get it on Google Play</span>
+                                    </a>
+                                </div>
+
+                                <!-- iOS Section -->
+                                <div>
+                                    <div class="level is-mobile mb-2">
+                                        <div class="level-left">
+                                            <div class="level-item">
+                                                <p class="has-text-weight-semibold has-text-dark">QField for iOS</p>
+                                            </div>
+                                        </div>
+                                        <div class="level-right">
+                                            <div class="level-item">
+                                                <span class="icon has-text-grey-dark">
+                                                    <i class="fab fa-apple fa-2x"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="button is-dark is-medium is-fullwidth" 
+                                        href="https://apps.apple.com/app/qfield-for-qgis/id1531726814"
+                                        target="_blank">
+                                        <span class="icon">
+                                            <i class="fab fa-app-store-ios"></i>
+                                        </span>
+                                        <span>Download on App Store</span>
                                     </a>
                                 </div>
                             </div>
-                            <div class="buttons-group">
-                                <p class="is-size-7 has-text-weight-semibold mb-2">
-                                    Other Platforms
-                                </p>
-                                <div class="buttons are-small">
-                                    <a class="button is-primary1" 
-                                       href="{{ absURL "resources/installation-guide" }}">
-                                        Installation Guide
+
+                            <!-- Other platforms buttons -->
+                            <div class="platform-buttons" data-platform="other" style="display: none;">
+                                <div class="content mb-4">
+                                    <p class="title is-5 has-text-dark">Additional Installation Options</p>
+                                </div>
+                                
+                                <!-- Source Code -->
+                                <div class="mb-4">
+                                    <p class="has-text-weight-semibold mb-2 has-text-dark">Source Code</p>
+                                    <div class="buttons has-addons is-fullwidth">
+                                        <a class="button is-primary1 is-medium is-expanded" 
+                                            href="/downloads/qgis-latest-ltr.tar.bz2"
+                                            download>
+                                            <span class="icon">
+                                                <i class="fas fa-code"></i>
+                                            </span>
+                                            <span>LTR Source</span>
+                                        </a>
+                                        <a class="button is-primary1 is-outlined is-medium is-expanded" 
+                                            href="/downloads/qgis-latest.tar.bz2"
+                                            download>
+                                            <span class="icon">
+                                                <i class="fas fa-code"></i>
+                                            </span>
+                                            <span>Latest Source</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Other Platforms -->
+                                <div class="notification is-info is-light">
+                                    <p class="subtitle is-6 mb-2">
+                                        <strong>Looking for BSD, Containers, or other platforms?</strong>
+                                    </p>
+                                    <a class="button is-info is-medium" 
+                                        href="{{ absURL "resources/installation-guide" }}">
+                                        <span>View Complete Installation Guide</span>
+                                        <span class="icon">
+                                            <i class="fas fa-book"></i>
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -223,7 +394,7 @@
 </section>
 
 <style>
-/* Minimal custom CSS for download banner */
+/* Minimal custom CSS for download banner background overlay */
 .download-hero-banner {
     position: relative;
 }
@@ -235,7 +406,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(88, 150, 50, 0.9) 0%, rgba(70, 118, 37, 0.9) 100%);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .download-hero-banner .hero-body {
@@ -243,86 +414,85 @@
     z-index: 1;
 }
 
-.download-platform-selector-field {
-    margin-bottom: 0.75rem;
+/* Button improvements for equal widths */
+.download-hero-banner .buttons.has-addons {
+    display: flex;
 }
 
-#platform-dropdown .dropdown-trigger button {
-    min-width: 180px;
+.download-hero-banner .buttons.has-addons .button.is-expanded {
+    flex: 1;
 }
 
-.platform-buttons {
-    margin-top: 1rem;
+.download-hero-banner .buttons.is-fullwidth .button.is-expanded {
+    flex: 1;
 }
 
-.buttons-group {
-    margin-bottom: 1rem;
-}
-
-.buttons-group p {
-    color: white;
-    opacity: 0.95;
-}
-
-.info-icon-tooltip {
-    cursor: help;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
-    font-size: 0.75rem;
-    font-weight: bold;
-    margin-left: 0.25rem;
-    position: relative;
-}
-
-.info-icon-tooltip:hover::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: #333;
-    color: white;
-    border-radius: 6px;
-    white-space: nowrap;
-    font-size: 0.875rem;
-    font-weight: normal;
-    z-index: 10;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.info-icon-tooltip:hover::before {
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 6px solid transparent;
-    border-top-color: #333;
-    z-index: 10;
-}
-
+/* Mobile fixes */
 @media screen and (max-width: 768px) {
-    #platform-dropdown .dropdown-trigger button {
-        width: 100%;
+    .download-hero-banner .hero-body {
+        padding: 1.5rem 0.75rem;
     }
     
-    .buttons-group .buttons {
+    .download-hero-banner .box {
+        margin: 1rem auto 0;
+        padding: 1.25rem;
+        max-width: 90vw;
+        overflow-x: hidden;
+    }
+    
+    .download-hero-banner .buttons {
         flex-direction: column;
     }
     
-    .buttons-group .button {
+    .download-hero-banner .buttons .button {
         width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .download-hero-banner .buttons.has-addons {
+        flex-direction: column;
+    }
+    
+    .download-hero-banner .buttons.has-addons .button {
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .download-hero-banner .level {
+        display: block;
+    }
+    
+    .download-hero-banner .level-left,
+    .download-hero-banner .level-right {
+        margin-bottom: 0.5rem;
+    }
+    
+    .download-hero-banner .title.hero-title {
+        font-size: 2rem;
+    }
+    
+    .download-hero-banner .subtitle.hero-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablet adjustments */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .download-hero-banner .box {
+        margin-top: 1.5rem;
     }
 }
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('skip_donate') === 'true') {
+            hidePrompt();
+        }
+    });
+</script>
 
 {{ end }}
 {{ end }}
