@@ -1,4 +1,4 @@
-// Platform Selector - Blender-inspired Download Page
+// Platform Selector - Bulma-based Download Page
 (function() {
     'use strict';
 
@@ -52,11 +52,26 @@
         return subtitles[platform] || 'Long Term Release';
     }
 
+    // Get platform display name with emoji
+    function getPlatformDisplayName(platform) {
+        const names = {
+            'windows': '🪟 Windows',
+            'macos': '🍏 macOS',
+            'linux': '🐧 Linux',
+            'mobile': '📱 Mobile',
+            'other': '⚙️ Other'
+        };
+        return names[platform] || '🪟 Windows';
+    }
+
     // Initialize platform selector on page load
     function initPlatformSelector() {
         const dropdown = document.getElementById('platform-dropdown');
-        const downloadButton = document.getElementById('primary-download-button');
-        const downloadSubtitle = document.getElementById('download-button-subtitle');
+        const downloadButton = document.getElementById('primary-download-btn');
+        const downloadBtnText = document.getElementById('download-btn-text');
+        const downloadSubtitle = document.getElementById('download-subtitle');
+        const selectedPlatformText = document.getElementById('selected-platform-text');
+        const platformOptions = document.querySelectorAll('.platform-option');
         const platformContents = document.querySelectorAll('.platform-content');
         
         if (!dropdown || !downloadButton) {
@@ -65,8 +80,35 @@
 
         // Detect and set default platform
         const defaultPlatform = checkStoredPreference() || detectOS();
-        dropdown.value = defaultPlatform;
+        
+        // Set up Bulma dropdown click handlers
+        platformOptions.forEach(option => {
+            option.addEventListener('click', function(e) {
+                e.preventDefault();
+                const platform = this.dataset.platform;
+                
+                // Update selected platform text
+                if (selectedPlatformText) {
+                    selectedPlatformText.textContent = getPlatformDisplayName(platform);
+                }
+                
+                // Activate platform content
+                activatePlatform(platform);
+                
+                // Update download button
+                updateDownloadButton(platform);
+                
+                // Close dropdown (Bulma will handle this, but we can force it)
+                dropdown.classList.remove('is-active');
+            });
+        });
+
+        // Initial setup
+        if (selectedPlatformText) {
+            selectedPlatformText.textContent = getPlatformDisplayName(defaultPlatform);
+        }
         activatePlatform(defaultPlatform);
+        updateDownloadButton(defaultPlatform);
 
         // Update download button for current platform
         function updateDownloadButton(platform) {
@@ -74,7 +116,9 @@
             const text = getDownloadButtonText(platform);
             const subtitle = getDownloadSubtitle(platform);
             
-            downloadButton.querySelector('.download-text').textContent = text;
+            if (downloadBtnText) {
+                downloadBtnText.textContent = text;
+            }
             if (downloadSubtitle) {
                 downloadSubtitle.textContent = subtitle;
             }
@@ -85,24 +129,26 @@
                 if (platform === 'linux') {
                     window.location.href = url;
                 } else {
-                    window.open(url, '_blank');
-                    // Redirect to thank you page after a short delay
-                    setTimeout(function() {
-                        window.location.href = '/download/thank-you';
-                    }, 500);
+                    window.location.href = url;
                 }
             };
         }
 
-        // Handle dropdown change
-        dropdown.addEventListener('change', function() {
-            const platform = this.value;
-            activatePlatform(platform);
-            updateDownloadButton(platform);
-        });
+        // Make dropdown work with click
+        const dropdownTrigger = dropdown.querySelector('.dropdown-trigger');
+        if (dropdownTrigger) {
+            dropdownTrigger.addEventListener('click', function(e) {
+                e.stopPropagation();
+                dropdown.classList.toggle('is-active');
+            });
+        }
 
-        // Initial button setup
-        updateDownloadButton(defaultPlatform);
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('is-active');
+            }
+        });
     }
 
     // Activate a specific platform
@@ -126,19 +172,6 @@
         } catch (e) {
             // localStorage might not be available
         }
-
-        // Scroll to platform content (smooth scroll)
-        const activeContent = document.querySelector(`.platform-content[data-platform="${platform}"]`);
-        if (activeContent) {
-            const offset = 100; // Offset for fixed header
-            const elementPosition = activeContent.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - offset;
-            
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
     }
 
     // Check for stored preference on load
@@ -146,13 +179,9 @@
         try {
             const storedPlatform = localStorage.getItem('qgis-preferred-platform');
             if (storedPlatform) {
-                const dropdown = document.getElementById('platform-dropdown');
-                if (dropdown) {
-                    // Check if the stored platform is a valid option
-                    const options = Array.from(dropdown.options).map(opt => opt.value);
-                    if (options.includes(storedPlatform)) {
-                        return storedPlatform;
-                    }
+                const validPlatforms = ['windows', 'macos', 'linux', 'mobile', 'other'];
+                if (validPlatforms.includes(storedPlatform)) {
+                    return storedPlatform;
                 }
             }
         } catch (e) {

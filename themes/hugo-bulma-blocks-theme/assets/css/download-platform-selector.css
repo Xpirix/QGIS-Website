@@ -1,188 +1,16 @@
-/* Platform Selector Styles - Blender-inspired Design */
-
-/* Hero Banner Section */
-.download-hero {
-    background: linear-gradient(135deg, #589632 0%, #467625 100%);
-    color: white;
-    padding: 3rem 2rem;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-
-.download-hero-content {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.download-hero h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: 0 0 0.5rem 0;
-    color: white;
-}
-
-.download-hero-subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    opacity: 0.95;
-}
-
-.download-hero-controls {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.platform-selector-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.platform-dropdown-label {
-    font-size: 0.95rem;
-    font-weight: 500;
-    opacity: 0.9;
-}
-
-.platform-dropdown {
-    padding: 0.75rem 2.5rem 0.75rem 1rem;
-    font-size: 1.1rem;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.15);
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    min-width: 250px;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='white' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 1rem center;
-}
-
-.platform-dropdown:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.5);
-}
-
-.platform-dropdown:focus {
-    outline: none;
-    border-color: white;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
-}
-
-.platform-dropdown option {
-    background: #fff;
-    color: #333;
-    padding: 0.5rem;
-}
-
-.download-button-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.hero-download-button {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 3rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-    background: white;
-    color: #589632;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.hero-download-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    background: #f8f9fa;
-}
-
-.hero-download-button:active {
-    transform: translateY(0);
-}
-
-.download-icon {
-    font-size: 1.5rem;
-}
-
-.download-button-subtitle {
-    font-size: 0.9rem;
-    opacity: 0.85;
-    margin: 0;
-}
-
-.version-info {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-}
-
-.version-info p {
-    margin: 0;
-    font-size: 0.95rem;
-    opacity: 0.9;
-}
-
-.info-badge {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
-    font-size: 0.85rem;
-    margin-left: 0.5rem;
-}
+/* Platform Selector Styles - Minimal custom CSS using Bulma */
 
 .download-platform-selector {
     margin: 2rem 0;
 }
 
-.platform-tabs {
-    display: none; /* Hidden in favor of dropdown */
-}
-
-.platform-intro {
-    background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #589632;
-    margin-bottom: 2rem;
-}
-
-.platform-intro p {
-    margin: 0.5rem 0;
-    line-height: 1.6;
-}
-
-.feature-freeze-notice {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid #ddd;
-}
-
 .platform-content {
     display: none;
-    animation: fadeIn 0.3s ease;
 }
 
 .platform-content.active {
     display: block;
+    animation: fadeIn 0.3s ease;
 }
 
 @keyframes fadeIn {
@@ -345,7 +173,7 @@
     align-items: center;
 }
 
-/* Platform-specific content */
+/* Warning boxes */
 .warning-box {
     padding: 1rem 1.5rem;
     background: #fff3cd;
@@ -393,32 +221,6 @@
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
-    .download-hero {
-        padding: 2rem 1rem;
-    }
-    
-    .download-hero h1 {
-        font-size: 2rem;
-    }
-    
-    .download-hero-controls {
-        gap: 1rem;
-    }
-    
-    .platform-dropdown {
-        min-width: 100%;
-    }
-    
-    .hero-download-button {
-        padding: 0.875rem 2rem;
-        font-size: 1.1rem;
-    }
-    
-    .version-info {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
-    
     .download-buttons {
         flex-direction: column;
         align-items: stretch;
@@ -434,7 +236,3 @@
     }
 }
 
-/* Smooth transitions */
-* {
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}

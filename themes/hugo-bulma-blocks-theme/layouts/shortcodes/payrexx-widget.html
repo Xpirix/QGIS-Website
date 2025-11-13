@@ -79,6 +79,10 @@
     });
     function hidePrompt() {
         document.getElementById("donate-prompt").style.display = "none";
+        const downloadSection = document.getElementById("download-section");
+        if (downloadSection) {
+            downloadSection.style.display = "block";
+        }
         localStorage.setItem("donatePromptClosed", "true");
         window.scrollTo(0, 0);
     }

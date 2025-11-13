@@ -1,0 +1,137 @@
+{{/* Download Banner - Blender-inspired design */}}
+{{ if .Params.HasDownloadBanner }}
+{{ with index .Site.Data.conf }}
+<section class="hero is-primary is-medium download-hero-banner">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-8-desktop is-12-tablet has-text-centered-mobile">
+                    <h1 class="title is-1 is-spaced">
+                        Download QGIS
+                    </h1>
+                    <p class="subtitle is-4">
+                        Current version: <strong>QGIS {{ .release }} '{{ .codename }}'</strong>
+                    </p>
+                    <p class="subtitle is-5">
+                        Released on {{ .releasedate }}
+                    </p>
+                    
+                    <!-- Platform Selector and Download Button -->
+                    <div class="download-controls mt-5">
+                        <div class="field is-grouped is-grouped-centered">
+                            <div class="control">
+                                <div class="dropdown is-hoverable" id="platform-dropdown">
+                                    <div class="dropdown-trigger">
+                                        <button class="button is-medium is-light" aria-haspopup="true" aria-controls="dropdown-menu">
+                                            <span id="selected-platform-text">🪟 Windows</span>
+                                            <span class="icon is-small">
+                                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                        <div class="dropdown-content">
+                                            <a href="#" class="dropdown-item platform-option" data-platform="windows">
+                                                🪟 Windows
+                                            </a>
+                                            <a href="#" class="dropdown-item platform-option" data-platform="macos">
+                                                🍏 macOS
+                                            </a>
+                                            <a href="#" class="dropdown-item platform-option" data-platform="linux">
+                                                🐧 Linux
+                                            </a>
+                                            <a href="#" class="dropdown-item platform-option" data-platform="mobile">
+                                                📱 Mobile
+                                            </a>
+                                            <a href="#" class="dropdown-item platform-option" data-platform="other">
+                                                ⚙️ Other
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <button id="primary-download-btn" class="button is-success is-medium is-large">
+                                    <span class="icon">
+                                        <i class="fas fa-download"></i>
+                                    </span>
+                                    <span id="download-btn-text">Download for Windows</span>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="has-text-centered mt-3">
+                            <span class="tag is-light is-medium" id="download-subtitle">Long Term Release (Recommended)</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Version Info -->
+                    <div class="content mt-5 has-text-centered">
+                        <p class="is-size-6">
+                            <strong>LTR:</strong> {{ .ltrrelease }} '{{ .ltrcodename }}' 
+                            <span class="tag is-success is-light">Most Stable</span>
+                        </p>
+                        <p class="is-size-6">
+                            <strong>Latest:</strong> {{ .release }} '{{ .codename }}' 
+                            <span class="tag is-info is-light">Newest Features</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Custom CSS for download banner - keeping it minimal */
+.download-hero-banner {
+    background: linear-gradient(135deg, #589632 0%, #467625 100%);
+}
+
+.download-hero-banner .title,
+.download-hero-banner .subtitle {
+    color: white;
+}
+
+.download-hero-banner .tag {
+    margin: 0 0.25rem;
+}
+
+.download-controls {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#platform-dropdown .dropdown-trigger button {
+    min-width: 180px;
+    justify-content: space-between;
+}
+
+#primary-download-btn {
+    min-width: 250px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .download-controls .field.is-grouped {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .download-controls .control {
+        width: 100%;
+    }
+    
+    #platform-dropdown,
+    #primary-download-btn {
+        width: 100%;
+    }
+    
+    #platform-dropdown .dropdown-trigger button,
+    #primary-download-btn {
+        width: 100%;
+    }
+}
+</style>
+
+{{ end }}
+{{ end }}

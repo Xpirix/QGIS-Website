@@ -1,63 +1,19 @@
 {{ with index .Site.Data.conf }}
-<div class="download-platform-selector">
-    <!-- Hero Banner Section -->
-    <div class="download-hero">
-        <div class="download-hero-content">
-            <h1>Download QGIS</h1>
-            <p class="download-hero-subtitle">
-                Current version: <strong>QGIS {{ .release }} '{{ .codename }}'</strong> ({{ .releasedate }})
+<div class="download-platform-selector" id="download-section" style="display: none;">
+    <div class="container">
+        <div class="content has-text-centered mb-5">
+            <p class="is-size-5">
+                Long Term Release (LTR) builds are intended for those who value stability over having the latest features. 
+                If you are unsure which version is best for you, download the LTR.
             </p>
-            
-            <div class="download-hero-controls">
-                <div class="platform-selector-wrapper">
-                    <label for="platform-dropdown" class="platform-dropdown-label">Choose your platform:</label>
-                    <select id="platform-dropdown" class="platform-dropdown">
-                        <option value="windows">🪟 Windows</option>
-                        <option value="macos">🍏 macOS</option>
-                        <option value="linux">🐧 Linux</option>
-                        <option value="mobile">📱 Mobile</option>
-                        <option value="other">⚙️ Other</option>
-                    </select>
-                </div>
-                
-                <div class="download-button-wrapper">
-                    <button id="primary-download-button" class="hero-download-button">
-                        <span class="download-icon">⬇️</span>
-                        <span class="download-text">Download QGIS</span>
-                    </button>
-                    <p class="download-button-subtitle" id="download-button-subtitle">
-                        Long Term Release (Recommended)
-                    </p>
-                </div>
+            {{ if eq .infeaturefreeze true }}
+            <div class="notification is-info is-light">
+                We are currently in feature freeze preceding the release of QGIS {{ .nextversion }}.
+                <strong>Please consider testing the prereleases</strong>. See
+                <a href="{{ absURL "resources/roadmap#qgis-prereleases" }}">road map</a>.
             </div>
-            
-            <div class="version-info">
-                <p>
-                    <strong>Long Term Release:</strong> {{ .ltrrelease }} '{{ .ltrcodename }}' 
-                    <span class="info-badge">Most Stable</span>
-                </p>
-                <p>
-                    <strong>Latest Release:</strong> {{ .release }} '{{ .codename }}' 
-                    <span class="info-badge">Newest Features</span>
-                </p>
-            </div>
+            {{ end }}
         </div>
-    </div>
-    
-    <!-- Additional Info Section -->
-    <div class="platform-intro">
-        <p>
-            Long Term Release (LTR) builds are intended for those who value stability over having the latest features. 
-            If you are unsure which version is best for you, download the LTR.
-        </p>
-        {{ if eq .infeaturefreeze true }}
-        <p class="feature-freeze-notice">
-            We are currently in feature freeze preceding the release of QGIS {{ .nextversion }}.
-            <strong>Please consider testing the prereleases</strong>. See
-            <a href="{{ absURL "resources/roadmap#qgis-prereleases" }}">road map</a>.
-        </p>
-        {{ end }}
-    </div>
 
-    <div class="platform-contents">
+        <div class="platform-contents">
 {{ end }}
