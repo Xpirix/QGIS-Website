@@ -22,8 +22,11 @@
             'windows': '<span class="icon"><i class="fab fa-windows"></i></span><span>Windows - Desktop OS</span>',
             'macos': '<span class="icon"><i class="fab fa-apple"></i></span><span>macOS - Apple Desktop</span>',
             'linux': '<span class="icon"><i class="fab fa-linux"></i></span><span>Linux - Open Source OS</span>',
+            'bsd': '<span class="icon"><i class="fab fa-freebsd"></i></span><span>BSD</span>',
+            'container': '<span class="icon"><i class="fab fa-docker"></i></span><span>Container Images</span>',
             'mobile': '<span class="icon"><i class="fas fa-mobile-alt"></i></span><span>Mobile & Tablet - Android & iOS</span>',
-            'other': '<span class="icon"><i class="fas fa-ellipsis-h"></i></span><span>Other Platforms - BSD, Source & More</span>'
+            'source': '<span class="icon"><i class="fas fa-code"></i></span><span>Source Code</span>',
+            'example': '<span class="icon"><i class="fas fa-database"></i></span><span>Example Datasets</span>'
         };
         return names[platform] || '<span class="icon"><i class="fab fa-windows"></i></span><span>Windows - Desktop OS</span>';
     }
@@ -131,7 +134,7 @@
         try {
             const storedPlatform = localStorage.getItem('qgis-preferred-platform');
             if (storedPlatform) {
-                const validPlatforms = ['windows', 'macos', 'linux', 'mobile', 'other'];
+                const validPlatforms = ['windows', 'macos', 'linux', 'bsd', 'container', 'mobile', 'source', 'example'];
                 if (validPlatforms.includes(storedPlatform)) {
                     return storedPlatform;
                 }
