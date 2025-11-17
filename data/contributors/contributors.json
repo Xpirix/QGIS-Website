@@ -5,8 +5,8 @@
     "how_to_update": "Run 'python scripts/update_individual_contributors.py --token YOUR_TOKEN'",
     "documentation": "See CONTRIBUTING.md section: Automated Content and Manual Edit Guidelines"
   },
-  "generated_at": "2025-11-17T09:27:23.290337+00:00",
-  "total_contributors": 749,
+  "generated_at": "2025-11-17T12:28:38.031858+00:00",
+  "total_contributors": 1004,
   "contributors": [
     {
       "login": "nyalldawson",
@@ -89,6 +89,16 @@
       }
     },
     {
+      "login": "email:timlinux@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/4bdf6850f2301edc8ef7d38897e1bf7b?d=identicon&s=200",
+      "total_contributions": 2282,
+      "thematics": {
+        "qgis_core": 2276,
+        "documentation": 6,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "wonder-sk",
       "avatar_url": "https://avatars.githubusercontent.com/u/193367?v=4",
       "total_contributions": 2224,
@@ -101,11 +111,21 @@
     {
       "login": "Xpirix",
       "avatar_url": "https://avatars.githubusercontent.com/u/43842786?u=0883532bbfaf23d63336096ba8dab2acd06decf3&v=4",
-      "total_contributions": 2049,
+      "total_contributions": 2053,
       "thematics": {
-        "web_sites": 2049,
+        "web_sites": 2053,
         "qgis_core": 0,
         "documentation": 0
+      }
+    },
+    {
+      "login": "email:jef@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/70d94a77217a821fadc81cdab52eacf5?d=identicon&s=200",
+      "total_contributions": 2011,
+      "thematics": {
+        "qgis_core": 2011,
+        "documentation": 0,
+        "web_sites": 0
       }
     },
     {
@@ -129,6 +149,16 @@
       }
     },
     {
+      "login": "email:mhugent@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/b7ad5704a7a7f4d0bea8f9f86f03d321?d=identicon&s=200",
+      "total_contributions": 1425,
+      "thematics": {
+        "qgis_core": 1425,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "pblottiere",
       "avatar_url": "https://avatars.githubusercontent.com/u/9266424?u=fa5009adc96e049902dd21158bf06e6efdbb517d&v=4",
       "total_contributions": 1411,
@@ -145,6 +175,16 @@
       "thematics": {
         "qgis_core": 1399,
         "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:gsherman@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/b2bc96ff1041718a19c571aba2173a71?d=identicon&s=200",
+      "total_contributions": 1129,
+      "thematics": {
+        "qgis_core": 1127,
+        "documentation": 2,
         "web_sites": 0
       }
     },
@@ -259,6 +299,26 @@
       }
     },
     {
+      "login": "email:wonder@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/d09979770a29549c1ae283af2c13f94d?d=identicon&s=200",
+      "total_contributions": 657,
+      "thematics": {
+        "qgis_core": 657,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:g_j_m@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/25d86a9157320e993e9bf856a98f6c09?d=identicon&s=200",
+      "total_contributions": 654,
+      "thematics": {
+        "qgis_core": 654,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "junek",
       "avatar_url": "https://avatars.githubusercontent.com/u/1647713?v=4",
       "total_contributions": 643,
@@ -359,6 +419,16 @@
       }
     },
     {
+      "login": "email:macho@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/936753c64cacc9e318727de119a2ea4f?d=identicon&s=200",
+      "total_contributions": 426,
+      "thematics": {
+        "qgis_core": 406,
+        "documentation": 20,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "benoitdm-oslandia",
       "avatar_url": "https://avatars.githubusercontent.com/u/64401067?u=85e5e2118921f9f6948e8087e5402dfc3f59e848&v=4",
       "total_contributions": 413,
@@ -389,12 +459,32 @@
       }
     },
     {
+      "login": "email:rblazek@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/b40db58392a24c6f362eef8d57de8355?d=identicon&s=200",
+      "total_contributions": 399,
+      "thematics": {
+        "qgis_core": 399,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "pcav",
       "avatar_url": "https://avatars.githubusercontent.com/u/691842?v=4",
       "total_contributions": 386,
       "thematics": {
         "qgis_core": 221,
         "documentation": 165,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:dassau@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/116b77805fb551f244f5fefd37d69d1b?d=identicon&s=200",
+      "total_contributions": 378,
+      "thematics": {
+        "qgis_core": 59,
+        "documentation": 319,
         "web_sites": 0
       }
     },
@@ -459,6 +549,16 @@
       }
     },
     {
+      "login": "selmaVH1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138306509?u=d877cba7008b0123926a73ebd68b467e08e2305b&v=4",
+      "total_contributions": 318,
+      "thematics": {
+        "documentation": 303,
+        "web_sites": 15,
+        "qgis_core": 0
+      }
+    },
+    {
       "login": "rischanlab",
       "avatar_url": "https://avatars.githubusercontent.com/u/2235894?u=1b8b0d873d3d4d185de061e947c875334c6363b7&v=4",
       "total_contributions": 315,
@@ -470,7 +570,7 @@
     },
     {
       "login": "YoannQDQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9693475?u=b91d71b3d7ca383b062cdc24d61239f48435edfc&v=4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9693475?u=7ce97ee8dedc4fa3d9add301ddac72aa49173e87&v=4",
       "total_contributions": 315,
       "thematics": {
         "qgis_core": 314,
@@ -489,6 +589,16 @@
       }
     },
     {
+      "login": "email:hugo.mercier@oslandia.com",
+      "avatar_url": "https://www.gravatar.com/avatar/531a3f628c4ef1ad0a2d18083cb824a0?d=identicon&s=200",
+      "total_contributions": 313,
+      "thematics": {
+        "qgis_core": 309,
+        "documentation": 4,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "sumandari",
       "avatar_url": "https://avatars.githubusercontent.com/u/40058076?u=6ab30621840fbbe593a5bf3da84eef9e79e7bdae&v=4",
       "total_contributions": 303,
@@ -496,16 +606,6 @@
         "web_sites": 303,
         "qgis_core": 0,
         "documentation": 0
-      }
-    },
-    {
-      "login": "selmaVH1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/138306509?u=d877cba7008b0123926a73ebd68b467e08e2305b&v=4",
-      "total_contributions": 303,
-      "thematics": {
-        "documentation": 302,
-        "web_sites": 1,
-        "qgis_core": 0
       }
     },
     {
@@ -549,6 +649,16 @@
       }
     },
     {
+      "login": "email:borysiasty@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/f8db4e4ab83989636e897215903677b8?d=identicon&s=200",
+      "total_contributions": 259,
+      "thematics": {
+        "qgis_core": 259,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "borysiasty",
       "avatar_url": "https://avatars.githubusercontent.com/u/1000043?v=4",
       "total_contributions": 253,
@@ -569,6 +679,16 @@
       }
     },
     {
+      "login": "email:kyngchaos@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/aab6a2297900a3e77c92e86b5f1eda6b?d=identicon&s=200",
+      "total_contributions": 241,
+      "thematics": {
+        "qgis_core": 241,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "anitanh",
       "avatar_url": "https://avatars.githubusercontent.com/u/26101337?u=014868aa478870037e3f070f7cb571b9535d5ff5&v=4",
       "total_contributions": 236,
@@ -576,6 +696,26 @@
         "web_sites": 236,
         "qgis_core": 0,
         "documentation": 0
+      }
+    },
+    {
+      "login": "email:sumandari@kartoza.com",
+      "avatar_url": "https://www.gravatar.com/avatar/81dc31fa492c88d8034c56964cd4993f?d=identicon&s=200",
+      "total_contributions": 216,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 215
+      }
+    },
+    {
+      "login": "email:strk@keybit.net",
+      "avatar_url": "https://www.gravatar.com/avatar/34bafd290f6f39380f5f87e0122daf83?d=identicon&s=200",
+      "total_contributions": 212,
+      "thematics": {
+        "qgis_core": 210,
+        "documentation": 0,
+        "web_sites": 2
       }
     },
     {
@@ -609,6 +749,16 @@
       }
     },
     {
+      "login": "email:pcav@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/5c6ef7596667ca81693142881399917c?d=identicon&s=200",
+      "total_contributions": 193,
+      "thematics": {
+        "qgis_core": 191,
+        "documentation": 2,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "ahuarte47",
       "avatar_url": "https://avatars.githubusercontent.com/u/5576272?u=7999b6d1a7701d34f6540fc9f723024c648faa05&v=4",
       "total_contributions": 192,
@@ -626,6 +776,36 @@
         "qgis_core": 191,
         "web_sites": 0,
         "documentation": 0
+      }
+    },
+    {
+      "login": "email:rabla@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/04bebd645c474bb3dfd6d474367c39d0?d=identicon&s=200",
+      "total_contributions": 184,
+      "thematics": {
+        "qgis_core": 184,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:homann@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/09ea1e638d9070fbb4ff022ab89fcd4c?d=identicon&s=200",
+      "total_contributions": 178,
+      "thematics": {
+        "qgis_core": 178,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:telwertowski@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/1e826c5ba3edd3548ed6739d1d211c29?d=identicon&s=200",
+      "total_contributions": 177,
+      "thematics": {
+        "qgis_core": 177,
+        "documentation": 0,
+        "web_sites": 0
       }
     },
     {
@@ -659,12 +839,32 @@
       }
     },
     {
+      "login": "email:giovanni.manghi@faunalia.pt",
+      "avatar_url": "https://www.gravatar.com/avatar/06c90a957d7f6a5dabf67e9e31b73e5c?d=identicon&s=200",
+      "total_contributions": 171,
+      "thematics": {
+        "qgis_core": 167,
+        "documentation": 4,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "roya0045",
       "avatar_url": "https://avatars.githubusercontent.com/u/12854129?u=e398b806f2a251db477c949206dcd338304a4267&v=4",
       "total_contributions": 168,
       "thematics": {
         "qgis_core": 144,
         "documentation": 24,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:mederic.ribreux@medspx.homenet.org",
+      "avatar_url": "https://www.gravatar.com/avatar/3378d5ff9192fc99e2f1e15ba4e43115?d=identicon&s=200",
+      "total_contributions": 164,
+      "thematics": {
+        "qgis_core": 164,
+        "documentation": 0,
         "web_sites": 0
       }
     },
@@ -685,6 +885,36 @@
       "thematics": {
         "qgis_core": 157,
         "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:leo.lami@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/bdb1a319949d1ff66365dd5a258d727c?d=identicon&s=200",
+      "total_contributions": 157,
+      "thematics": {
+        "qgis_core": 157,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:mcoletti@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/9f7446e9c267a9857f20f2f2e0f65965?d=identicon&s=200",
+      "total_contributions": 155,
+      "thematics": {
+        "qgis_core": 155,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:cfarmer@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/d0475a5fbb31b9d6cd315593c788cbcf?d=identicon&s=200",
+      "total_contributions": 149,
+      "thematics": {
+        "qgis_core": 127,
+        "documentation": 22,
         "web_sites": 0
       }
     },
@@ -719,6 +949,16 @@
       }
     },
     {
+      "login": "email:volayaf@881b9c09-3ef8-f3c2-ec3d-21d735c97f4d",
+      "avatar_url": "https://www.gravatar.com/avatar/f5353f53041fe62b2c05f5af9e86b81e?d=identicon&s=200",
+      "total_contributions": 143,
+      "thematics": {
+        "qgis_core": 143,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "tomkralidis",
       "avatar_url": "https://avatars.githubusercontent.com/u/910430?u=2b8e9acdb4343e64b5a4bbc45cf1681f6d53c394&v=4",
       "total_contributions": 142,
@@ -749,6 +989,16 @@
       }
     },
     {
+      "login": "email:larsl@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/6f091f5d34601cac73c8e1681e3c9915?d=identicon&s=200",
+      "total_contributions": 132,
+      "thematics": {
+        "qgis_core": 132,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "anitagraser",
       "avatar_url": "https://avatars.githubusercontent.com/u/590385?u=7e2f0e6ce7250c03c95c9d4ddaba12c78fa0860a&v=4",
       "total_contributions": 131,
@@ -769,6 +1019,15 @@
       }
     },
     {
+      "login": "email:taraathan@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/33829719f1d00bd61b100e9633ccb388?d=identicon&s=200",
+      "total_contributions": 128,
+      "thematics": {
+        "documentation": 128,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "JanCaha",
       "avatar_url": "https://avatars.githubusercontent.com/u/7641902?u=a6a0503867918f60fdede15b290a455550beb76f&v=4",
       "total_contributions": 127,
@@ -776,6 +1035,16 @@
         "qgis_core": 124,
         "web_sites": 3,
         "documentation": 0
+      }
+    },
+    {
+      "login": "email:morb_au@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/46a8bfef372c833dddbbccc00f13d38b?d=identicon&s=200",
+      "total_contributions": 124,
+      "thematics": {
+        "qgis_core": 124,
+        "documentation": 0,
+        "web_sites": 0
       }
     },
     {
@@ -795,6 +1064,16 @@
       "thematics": {
         "qgis_core": 111,
         "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:maksim.rylov@sap.com",
+      "avatar_url": "https://www.gravatar.com/avatar/727598396e4582faadbc32ba5fa7a966?d=identicon&s=200",
+      "total_contributions": 107,
+      "thematics": {
+        "qgis_core": 107,
+        "documentation": 0,
         "web_sites": 0
       }
     },
@@ -889,6 +1168,26 @@
       }
     },
     {
+      "login": "email:mederic.ribreux@medspx.fr",
+      "avatar_url": "https://www.gravatar.com/avatar/654fd4a2e11f5ae8c06bf11862712875?d=identicon&s=200",
+      "total_contributions": 80,
+      "thematics": {
+        "qgis_core": 80,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:marco@marco-laptop.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/9df7da4a19e12a847dc3bfe0daaece00?d=identicon&s=200",
+      "total_contributions": 78,
+      "thematics": {
+        "qgis_core": 78,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "pka",
       "avatar_url": "https://avatars.githubusercontent.com/u/19007?u=669acb4e9bf13d9e3431f51b2786a9c1fa2dd062&v=4",
       "total_contributions": 76,
@@ -909,6 +1208,16 @@
       }
     },
     {
+      "login": "email:ersts@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/fdf272af84b4e377a791dac8647025a7?d=identicon&s=200",
+      "total_contributions": 74,
+      "thematics": {
+        "qgis_core": 74,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "gioman",
       "avatar_url": "https://avatars.githubusercontent.com/u/1951107?u=ab1222fa896e20db2ab88c2383d0e5c64fcbe910&v=4",
       "total_contributions": 72,
@@ -919,6 +1228,26 @@
       }
     },
     {
+      "login": "email:brushtyler@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/f5b0af6006b945e0ce6f9b1254424d17?d=identicon&s=200",
+      "total_contributions": 71,
+      "thematics": {
+        "qgis_core": 71,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:volayaf@gmail.com@881b9c09-3ef8-f3c2-ec3d-21d735c97f4d",
+      "avatar_url": "https://www.gravatar.com/avatar/2088f62b79ecc2b2bf8786e75b868e0e?d=identicon&s=200",
+      "total_contributions": 69,
+      "thematics": {
+        "qgis_core": 69,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "espinafre",
       "avatar_url": "https://avatars.githubusercontent.com/u/25933044?u=0ef99c8700774cee922e4185bcf29848684faefa&v=4",
       "total_contributions": 68,
@@ -926,6 +1255,16 @@
         "qgis_core": 68,
         "web_sites": 0,
         "documentation": 0
+      }
+    },
+    {
+      "login": "email:aruntheguy@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/f861b2e011881e00be8fea40b4fe73f4?d=identicon&s=200",
+      "total_contributions": 68,
+      "thematics": {
+        "qgis_core": 68,
+        "documentation": 0,
+        "web_sites": 0
       }
     },
     {
@@ -959,6 +1298,26 @@
       }
     },
     {
+      "login": "email:stevehalasz@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/8cd995bcd9bd8af87386a96bf9610c03?d=identicon&s=200",
+      "total_contributions": 63,
+      "thematics": {
+        "qgis_core": 63,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:jobi@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/69dc395928b71c93e5349dc6303d04dc?d=identicon&s=200",
+      "total_contributions": 61,
+      "thematics": {
+        "qgis_core": 61,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "AlisterH",
       "avatar_url": "https://avatars.githubusercontent.com/u/714600?v=4",
       "total_contributions": 57,
@@ -966,6 +1325,16 @@
         "qgis_core": 55,
         "documentation": 1,
         "web_sites": 1
+      }
+    },
+    {
+      "login": "email:bertrand.rix@oslandia.com",
+      "avatar_url": "https://www.gravatar.com/avatar/59f06e688abaf1875cef61b6baacc9e9?d=identicon&s=200",
+      "total_contributions": 57,
+      "thematics": {
+        "qgis_core": 53,
+        "documentation": 4,
+        "web_sites": 0
       }
     },
     {
@@ -1009,6 +1378,24 @@
       }
     },
     {
+      "login": "email:cpolymeris@gmail.com@881b9c09-3ef8-f3c2-ec3d-21d735c97f4d",
+      "avatar_url": "https://www.gravatar.com/avatar/60e196c88c284db133eff859a2303325?d=identicon&s=200",
+      "total_contributions": 52,
+      "thematics": {
+        "qgis_core": 52,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:george@theqrust.com",
+      "avatar_url": "https://www.gravatar.com/avatar/c7d47d645ac4af95d3ecc8f413d91185?d=identicon&s=200",
+      "total_contributions": 52,
+      "thematics": {
+        "web_sites": 52
+      }
+    },
+    {
       "login": "capooti",
       "avatar_url": "https://avatars.githubusercontent.com/u/148380?v=4",
       "total_contributions": 50,
@@ -1019,6 +1406,14 @@
       }
     },
     {
+      "login": "email:alison.mukoma@yahoo.com",
+      "avatar_url": "https://www.gravatar.com/avatar/d4a2da7722f055eafb1fbca2884f85f4?d=identicon&s=200",
+      "total_contributions": 50,
+      "thematics": {
+        "web_sites": 50
+      }
+    },
+    {
       "login": "sebastic",
       "avatar_url": "https://avatars.githubusercontent.com/u/4605306?v=4",
       "total_contributions": 49,
@@ -1026,6 +1421,16 @@
         "qgis_core": 49,
         "web_sites": 0,
         "documentation": 0
+      }
+    },
+    {
+      "login": "email:viktor.sklencar@lutraconsulting.co.uk",
+      "avatar_url": "https://www.gravatar.com/avatar/d5d471215938f5b29493d642ce194a10?d=identicon&s=200",
+      "total_contributions": 49,
+      "thematics": {
+        "qgis_core": 49,
+        "documentation": 0,
+        "web_sites": 0
       }
     },
     {
@@ -1109,6 +1514,16 @@
       }
     },
     {
+      "login": "email:rmgu@dhi-gras.com",
+      "avatar_url": "https://www.gravatar.com/avatar/e5eda417cc8f1c5d16eab9ef562605b4?d=identicon&s=200",
+      "total_contributions": 44,
+      "thematics": {
+        "qgis_core": 44,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "jakimowb",
       "avatar_url": "https://avatars.githubusercontent.com/u/1404870?u=efacdaa4df8b52d9bfc3029e6ce45a509cc73595&v=4",
       "total_contributions": 43,
@@ -1116,6 +1531,16 @@
         "qgis_core": 43,
         "web_sites": 0,
         "documentation": 0
+      }
+    },
+    {
+      "login": "email:rugginoso@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/457d4e60cb318839b3ee4b8a2058fe06?d=identicon&s=200",
+      "total_contributions": 43,
+      "thematics": {
+        "qgis_core": 43,
+        "documentation": 0,
+        "web_sites": 0
       }
     },
     {
@@ -1139,6 +1564,16 @@
       }
     },
     {
+      "login": "email:bernhard.stroebl@jena.de",
+      "avatar_url": "https://www.gravatar.com/avatar/edda46b11a3ebdf5efbfb242c49acc33?d=identicon&s=200",
+      "total_contributions": 40,
+      "thematics": {
+        "qgis_core": 39,
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "sweco-sedalh",
       "avatar_url": "https://avatars.githubusercontent.com/u/82082024?u=cc2f1cd3244e41ca97c8bfa289f0b7799c6dae1b&v=4",
       "total_contributions": 38,
@@ -1146,6 +1581,16 @@
         "web_sites": 38,
         "qgis_core": 0,
         "documentation": 0
+      }
+    },
+    {
+      "login": "email:mmassing@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/08a481ae92471c30255f61d9132e5467?d=identicon&s=200",
+      "total_contributions": 38,
+      "thematics": {
+        "qgis_core": 38,
+        "documentation": 0,
+        "web_sites": 0
       }
     },
     {
@@ -1159,6 +1604,23 @@
       }
     },
     {
+      "login": "email:aghisla@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/f1d1234b888615f776c40d797a6989cd?d=identicon&s=200",
+      "total_contributions": 37,
+      "thematics": {
+        "documentation": 37,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:sam@sam-desktop.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/64eff295b0721bf30ce0285ad6876add?d=identicon&s=200",
+      "total_contributions": 37,
+      "thematics": {
+        "web_sites": 37
+      }
+    },
+    {
       "login": "leyan",
       "avatar_url": "https://avatars.githubusercontent.com/u/537624?v=4",
       "total_contributions": 35,
@@ -1166,6 +1628,16 @@
         "qgis_core": 35,
         "web_sites": 0,
         "documentation": 0
+      }
+    },
+    {
+      "login": "email:sbr00pwb@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/5581ed9dd62e45e582240ce6f663244a?d=identicon&s=200",
+      "total_contributions": 35,
+      "thematics": {
+        "qgis_core": 35,
+        "documentation": 0,
+        "web_sites": 0
       }
     },
     {
@@ -1209,6 +1681,16 @@
       }
     },
     {
+      "login": "email:julien.malik@gmail.com@881b9c09-3ef8-f3c2-ec3d-21d735c97f4d",
+      "avatar_url": "https://www.gravatar.com/avatar/f0f6df86c85a2c53d71bcfd13b7736a3?d=identicon&s=200",
+      "total_contributions": 33,
+      "thematics": {
+        "qgis_core": 33,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "jbp35",
       "avatar_url": "https://avatars.githubusercontent.com/u/19955142?v=4",
       "total_contributions": 32,
@@ -1216,6 +1698,36 @@
         "qgis_core": 32,
         "web_sites": 0,
         "documentation": 0
+      }
+    },
+    {
+      "login": "email:sebastien.peillet@oslandia.com",
+      "avatar_url": "https://www.gravatar.com/avatar/b9ff4fe1f89b952b309ab446301fad33?d=identicon&s=200",
+      "total_contributions": 32,
+      "thematics": {
+        "qgis_core": 32,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:loi@faunalia.it",
+      "avatar_url": "https://www.gravatar.com/avatar/79e632df48229dcb3b984e03fdab5ed3?d=identicon&s=200",
+      "total_contributions": 32,
+      "thematics": {
+        "qgis_core": 32,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:rduivenvoorde@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/63276a5bd4303eb239501f7d6508058e?d=identicon&s=200",
+      "total_contributions": 31,
+      "thematics": {
+        "qgis_core": 31,
+        "documentation": 0,
+        "web_sites": 0
       }
     },
     {
@@ -1269,12 +1781,51 @@
       }
     },
     {
+      "login": "email:marco@placebo.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/258fb982244b7bca7a21f096dac5a4b1?d=identicon&s=200",
+      "total_contributions": 30,
+      "thematics": {
+        "qgis_core": 30,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:alexbruy@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/740d1664652f20110cc4da70f35d57af?d=identicon&s=200",
+      "total_contributions": 30,
+      "thematics": {
+        "qgis_core": 30,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:irwingeorge@mac.com",
+      "avatar_url": "https://www.gravatar.com/avatar/82f211f287a544a69f0972ca43eb764a?d=identicon&s=200",
+      "total_contributions": 30,
+      "thematics": {
+        "documentation": 3,
+        "web_sites": 27
+      }
+    },
+    {
       "login": "MarieSilvestre",
       "avatar_url": "https://avatars.githubusercontent.com/u/3002741?u=e6bc1bb8f66a4881ceab040fe34feb23e73f2752&v=4",
       "total_contributions": 29,
       "thematics": {
         "qgis_core": 1,
         "documentation": 28,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:patrick.valsecchi@camptocamp.com",
+      "avatar_url": "https://www.gravatar.com/avatar/fb8e427355213bff5de4556131999340?d=identicon&s=200",
+      "total_contributions": 29,
+      "thematics": {
+        "qgis_core": 29,
+        "documentation": 0,
         "web_sites": 0
       }
     },
@@ -1329,6 +1880,55 @@
       }
     },
     {
+      "login": "email:marco@sourcepole.ch",
+      "avatar_url": "https://www.gravatar.com/avatar/e6336068f7c45b03ae9d6a0de6e3a929?d=identicon&s=200",
+      "total_contributions": 27,
+      "thematics": {
+        "qgis_core": 27,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:sholl@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/65a25c33f5cb857bd65bee2194e63c82?d=identicon&s=200",
+      "total_contributions": 27,
+      "thematics": {
+        "documentation": 27,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:eric.lemoine@oslandia.com",
+      "avatar_url": "https://www.gravatar.com/avatar/ae4692a514e8345b4f75333285b2bb48?d=identicon&s=200",
+      "total_contributions": 26,
+      "thematics": {
+        "qgis_core": 23,
+        "documentation": 3,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:regis.haubourg@oslandia.com",
+      "avatar_url": "https://www.gravatar.com/avatar/313e4ce0085281a4920366878d02c841?d=identicon&s=200",
+      "total_contributions": 26,
+      "thematics": {
+        "qgis_core": 16,
+        "documentation": 10,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:gjm@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/e60947a5ce3510d6b886cd5c7d009933?d=identicon&s=200",
+      "total_contributions": 26,
+      "thematics": {
+        "qgis_core": 22,
+        "documentation": 4,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "g-sherman",
       "avatar_url": "https://avatars.githubusercontent.com/u/494282?u=83d8f2c771f9a41efcb50143b69993d38d7cc2f7&v=4",
       "total_contributions": 25,
@@ -1346,6 +1946,16 @@
         "qgis_core": 25,
         "web_sites": 0,
         "documentation": 0
+      }
+    },
+    {
+      "login": "email:rashad.kanavath@c-s.fr",
+      "avatar_url": "https://www.gravatar.com/avatar/f9dd0e920f75ac25c920a9e35a1a5ce5?d=identicon&s=200",
+      "total_contributions": 25,
+      "thematics": {
+        "qgis_core": 25,
+        "documentation": 0,
+        "web_sites": 0
       }
     },
     {
@@ -1425,6 +2035,16 @@
       "thematics": {
         "qgis_core": 20,
         "documentation": 2,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:marco@hugis1.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/aacd51b6fb723a0dea2bdd681261a962?d=identicon&s=200",
+      "total_contributions": 22,
+      "thematics": {
+        "qgis_core": 22,
+        "documentation": 0,
         "web_sites": 0
       }
     },
@@ -1579,6 +2199,43 @@
       }
     },
     {
+      "login": "email:marcel.dancak@gista.sk",
+      "avatar_url": "https://www.gravatar.com/avatar/3acaca09070a7648d37f6d5e4b1ecd56?d=identicon&s=200",
+      "total_contributions": 18,
+      "thematics": {
+        "qgis_core": 18,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:courriel@stephane-brunner.ch",
+      "avatar_url": "https://www.gravatar.com/avatar/486ea44b3054dfd7887c0eeb70188997?d=identicon&s=200",
+      "total_contributions": 18,
+      "thematics": {
+        "qgis_core": 18,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:matteo@matteo-Q320-P320.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/2689da6cb2556569b68c146fee54baf3?d=identicon&s=200",
+      "total_contributions": 18,
+      "thematics": {
+        "documentation": 18,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:amy@kartoza.com",
+      "avatar_url": "https://www.gravatar.com/avatar/f9ee554fc819a63171f250c60b67e5b5?d=identicon&s=200",
+      "total_contributions": 18,
+      "thematics": {
+        "web_sites": 18
+      }
+    },
+    {
       "login": "atarakanovdes",
       "avatar_url": "https://avatars.githubusercontent.com/u/134694393?v=4",
       "total_contributions": 17,
@@ -1649,6 +2306,24 @@
       }
     },
     {
+      "login": "email:stopa85@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/3e650ce1f08ea536f5647888de79f3d9?d=identicon&s=200",
+      "total_contributions": 16,
+      "thematics": {
+        "qgis_core": 16,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:jjohnson@opengeo.org",
+      "avatar_url": "https://www.gravatar.com/avatar/c8fdd14aa544f6b32719634955e83501?d=identicon&s=200",
+      "total_contributions": 16,
+      "thematics": {
+        "web_sites": 16
+      }
+    },
+    {
       "login": "MehdiChinoune",
       "avatar_url": "https://avatars.githubusercontent.com/u/79349457?v=4",
       "total_contributions": 15,
@@ -1709,6 +2384,16 @@
       }
     },
     {
+      "login": "email:StevenB@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/bd45db8974047f2f005770f8dd986246?d=identicon&s=200",
+      "total_contributions": 15,
+      "thematics": {
+        "qgis_core": 15,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "marioba",
       "avatar_url": "https://avatars.githubusercontent.com/u/24844357?u=152e74c959381be9d0f449fb7bcb59509a4dca09&v=4",
       "total_contributions": 14,
@@ -1726,6 +2411,15 @@
         "documentation": 14,
         "web_sites": 0,
         "qgis_core": 0
+      }
+    },
+    {
+      "login": "email:yves@georezo.net",
+      "avatar_url": "https://www.gravatar.com/avatar/e3ab21eea88fc6bcf0c98151347e485c?d=identicon&s=200",
+      "total_contributions": 14,
+      "thematics": {
+        "documentation": 14,
+        "web_sites": 0
       }
     },
     {
@@ -1819,6 +2513,45 @@
       }
     },
     {
+      "login": "email:medspx@medspx.fr",
+      "avatar_url": "https://www.gravatar.com/avatar/47489bf8fb31ee27dec1a22a834ccac1?d=identicon&s=200",
+      "total_contributions": 13,
+      "thematics": {
+        "qgis_core": 13,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:paolo.cavallini@881b9c09-3ef8-f3c2-ec3d-21d735c97f4d",
+      "avatar_url": "https://www.gravatar.com/avatar/2f77f7bb73d86cb15c0e6315c96f7a0a?d=identicon&s=200",
+      "total_contributions": 13,
+      "thematics": {
+        "qgis_core": 13,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:esseffe@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/3ab2fabf3b75503eddbc560a9a33fc95?d=identicon&s=200",
+      "total_contributions": 13,
+      "thematics": {
+        "qgis_core": 13,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:DaSilvaA@utwks29322.ad.utwente.nl",
+      "avatar_url": "https://www.gravatar.com/avatar/8900458fcb28d050aa3e1cccc95ed904?d=identicon&s=200",
+      "total_contributions": 13,
+      "thematics": {
+        "documentation": 13,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "rcoffie",
       "avatar_url": "https://avatars.githubusercontent.com/u/34107104?u=61e9ddc486f431b3686264c9f5d1d58c0002dda4&v=4",
       "total_contributions": 12,
@@ -1875,6 +2608,25 @@
       "thematics": {
         "qgis_core": 2,
         "documentation": 10,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:joona@gispo.fi",
+      "avatar_url": "https://www.gravatar.com/avatar/f1392b4a0af5316ece6b19ac39286267?d=identicon&s=200",
+      "total_contributions": 12,
+      "thematics": {
+        "qgis_core": 12,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:capooti@capooti-mint.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/2af22796e26862cf5a859df6e8435d2b?d=identicon&s=200",
+      "total_contributions": 12,
+      "thematics": {
+        "documentation": 12,
         "web_sites": 0
       }
     },
@@ -2059,6 +2811,45 @@
       }
     },
     {
+      "login": "email:2cXaJAyd",
+      "avatar_url": "https://www.gravatar.com/avatar/78aebd1014a3c6cce6bb2c934b67ab1d?d=identicon&s=200",
+      "total_contributions": 10,
+      "thematics": {
+        "qgis_core": 10,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:yakushevs@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/85747bc182b1006ad73bab31a457a48b?d=identicon&s=200",
+      "total_contributions": 10,
+      "thematics": {
+        "qgis_core": 10,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:leolami@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/7f9e6f3b8eaf2a4ef1b0344bc63c9000?d=identicon&s=200",
+      "total_contributions": 10,
+      "thematics": {
+        "qgis_core": 10,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:jrm@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/e894e8d4cae27754c1d6b171928be9ff?d=identicon&s=200",
+      "total_contributions": 10,
+      "thematics": {
+        "documentation": 10,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "T4mmi",
       "avatar_url": "https://avatars.githubusercontent.com/u/6515799?u=dbd2f3409be9e6063f9ccc72cb9c5a2f403a70f0&v=4",
       "total_contributions": 9,
@@ -2165,6 +2956,75 @@
       "thematics": {
         "qgis_core": 3,
         "documentation": 6,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:marc.ducobu@champs-libres.coop",
+      "avatar_url": "https://www.gravatar.com/avatar/91d6c978f92c165c1e98392fe1d6d8f3?d=identicon&s=200",
+      "total_contributions": 9,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 6,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:felispimeja+github.com@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/fd6ee446b5a91ad4de8ef99dbc427c7e?d=identicon&s=200",
+      "total_contributions": 9,
+      "thematics": {
+        "qgis_core": 9,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:corentin.falcone@sirs-fr.com",
+      "avatar_url": "https://www.gravatar.com/avatar/4018b9306cdc3572cb1d475ef71982c7?d=identicon&s=200",
+      "total_contributions": 9,
+      "thematics": {
+        "qgis_core": 9,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:contact@ecologeek.org",
+      "avatar_url": "https://www.gravatar.com/avatar/ffbdbc0ad639d084e7177215aa5c9f67?d=identicon&s=200",
+      "total_contributions": 9,
+      "thematics": {
+        "qgis_core": 9,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:astrid_emde@osgeo.org",
+      "avatar_url": "https://www.gravatar.com/avatar/318e7bda497e21bee2ca63651d5506fa?d=identicon&s=200",
+      "total_contributions": 9,
+      "thematics": {
+        "qgis_core": 5,
+        "documentation": 4,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:marcopx@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/f97fac95e4d1963814e9d32ab89fc9b9?d=identicon&s=200",
+      "total_contributions": 9,
+      "thematics": {
+        "qgis_core": 9,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:micha@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/e81a3d4cb6f714c8bb63102734687cf5?d=identicon&s=200",
+      "total_contributions": 9,
+      "thematics": {
+        "documentation": 9,
         "web_sites": 0
       }
     },
@@ -2406,6 +3266,36 @@
         "documentation": 8,
         "web_sites": 0,
         "qgis_core": 0
+      }
+    },
+    {
+      "login": "email:marcel.dancak@lutraconsulting.co.uk",
+      "avatar_url": "https://www.gravatar.com/avatar/3c235b270413880a494e2c3529f4d652?d=identicon&s=200",
+      "total_contributions": 8,
+      "thematics": {
+        "qgis_core": 8,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:amcaninch@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/f6981708b8c7f78768d98ab90f10d860?d=identicon&s=200",
+      "total_contributions": 8,
+      "thematics": {
+        "qgis_core": 8,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:alexander.bruy@gmail.com@881b9c09-3ef8-f3c2-ec3d-21d735c97f4d",
+      "avatar_url": "https://www.gravatar.com/avatar/73acc315b93e00e17e8f00124125210d?d=identicon&s=200",
+      "total_contributions": 8,
+      "thematics": {
+        "qgis_core": 8,
+        "documentation": 0,
+        "web_sites": 0
       }
     },
     {
@@ -2669,6 +3559,53 @@
       }
     },
     {
+      "login": "email:sebastie.peillet@hytech-imaging.fr",
+      "avatar_url": "https://www.gravatar.com/avatar/75e05da833e47ad534f16c4a6087575c?d=identicon&s=200",
+      "total_contributions": 7,
+      "thematics": {
+        "qgis_core": 7,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:julien@julien-laptop.home",
+      "avatar_url": "https://www.gravatar.com/avatar/5d4ff4c8c480f60f6ee9dfbbd0c68dc4?d=identicon&s=200",
+      "total_contributions": 7,
+      "thematics": {
+        "qgis_core": 7,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:vinayan@vinayan-MS-7623.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/5923d01955970e0501c01630c0db63b2?d=identicon&s=200",
+      "total_contributions": 7,
+      "thematics": {
+        "qgis_core": 7,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:tom_t_lee@yahoo.com",
+      "avatar_url": "https://www.gravatar.com/avatar/500248788eb47dc54220c1dbba7da02b?d=identicon&s=200",
+      "total_contributions": 7,
+      "thematics": {
+        "documentation": 7,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:Anita@.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/3d0628f4e43ffcee81735c1651e9bf8e?d=identicon&s=200",
+      "total_contributions": 7,
+      "thematics": {
+        "web_sites": 7
+      }
+    },
+    {
       "login": "faebebin",
       "avatar_url": "https://avatars.githubusercontent.com/u/21113500?u=03c08f6e2ab68a7e0994d22cd78302cc8e34814c&v=4",
       "total_contributions": 6,
@@ -2826,6 +3763,36 @@
         "documentation": 5,
         "web_sites": 1,
         "qgis_core": 0
+      }
+    },
+    {
+      "login": "name:Sebastian",
+      "avatar_url": "https://github.com/ghost.png",
+      "total_contributions": 6,
+      "thematics": {
+        "qgis_core": 6,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:gcontreras@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/9f4e8f0e570b95a4bbc853c3e815250f?d=identicon&s=200",
+      "total_contributions": 6,
+      "thematics": {
+        "qgis_core": 6,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:what_nick@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/30e512c0f4f4c1d2dd50f94d5eb748ac?d=identicon&s=200",
+      "total_contributions": 6,
+      "thematics": {
+        "qgis_core": 6,
+        "documentation": 0,
+        "web_sites": 0
       }
     },
     {
@@ -2996,6 +3963,101 @@
         "documentation": 5,
         "web_sites": 0,
         "qgis_core": 0
+      }
+    },
+    {
+      "login": "email:gruca.adam.pl@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/1f1be60714f40584da8d1934c680fdb7?d=identicon&s=200",
+      "total_contributions": 5,
+      "thematics": {
+        "qgis_core": 5,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:se1b6a@utveckling.uysehkx5s2aurghygrvkizz5tf.gvxx.internal.cloudapp.net",
+      "avatar_url": "https://www.gravatar.com/avatar/1672a3af4684be9ddf52f1a5ea95ff13?d=identicon&s=200",
+      "total_contributions": 5,
+      "thematics": {
+        "qgis_core": 5,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:opengis84@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/933b5063b2609c846915561e78501b93?d=identicon&s=200",
+      "total_contributions": 5,
+      "thematics": {
+        "qgis_core": 5,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:giovanni@sibirica.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/985c1603f54bf6365fd2fdca7de44c1f?d=identicon&s=200",
+      "total_contributions": 5,
+      "thematics": {
+        "qgis_core": 5,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:shalasz@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/0d52127e9c1fa19c86e9783200fe525e?d=identicon&s=200",
+      "total_contributions": 5,
+      "thematics": {
+        "qgis_core": 5,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:hoshi@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/d76d12ace277201cbaa3a14f4715521a?d=identicon&s=200",
+      "total_contributions": 5,
+      "thematics": {
+        "qgis_core": 5,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:eg@gismood.com",
+      "avatar_url": "https://www.gravatar.com/avatar/0b380942a9c16b84711b96a95be0bad6?d=identicon&s=200",
+      "total_contributions": 5,
+      "thematics": {
+        "documentation": 5,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:bogzab@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/4047ed7c43ffc31fa8860ad9690a7ec8?d=identicon&s=200",
+      "total_contributions": 5,
+      "thematics": {
+        "documentation": 5,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:cengel@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/7f6bf7499bc68c8ed38a78896b4f308c?d=identicon&s=200",
+      "total_contributions": 5,
+      "thematics": {
+        "documentation": 5,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:Thiashav.v@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/d0ec6507bb49471dc70199e69a808507?d=identicon&s=200",
+      "total_contributions": 5,
+      "thematics": {
+        "web_sites": 5
       }
     },
     {
@@ -3329,6 +4391,103 @@
       }
     },
     {
+      "login": "Franc-Brs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79576081?u=815c619183eec0413344e94827d123b226136dda&v=4",
+      "total_contributions": 4,
+      "thematics": {
+        "qgis_core": 4,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:Ucla ros 1",
+      "avatar_url": "https://www.gravatar.com/avatar/be7f23f1ba8adb8ed2663a9f0b04e05c?d=identicon&s=200",
+      "total_contributions": 4,
+      "thematics": {
+        "qgis_core": 4,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:kyngchaos@sumomo.attlocal.net",
+      "avatar_url": "https://www.gravatar.com/avatar/452679cbe0677c64aceec3a56eccb0e3?d=identicon&s=200",
+      "total_contributions": 4,
+      "thematics": {
+        "qgis_core": 4,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:maximilian.krambach@gmx.de",
+      "avatar_url": "https://www.gravatar.com/avatar/f0831a7dc2f446e96e105ef34e46d9d2?d=identicon&s=200",
+      "total_contributions": 4,
+      "thematics": {
+        "qgis_core": 4,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:ddehaan@sybase.com",
+      "avatar_url": "https://www.gravatar.com/avatar/4a13ca0b85dcb4aa8a9b232f6a39f822?d=identicon&s=200",
+      "total_contributions": 4,
+      "thematics": {
+        "qgis_core": 4,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:redlegoreng@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/1de9f8e2d4ab865145eb6d46c5541e1d?d=identicon&s=200",
+      "total_contributions": 4,
+      "thematics": {
+        "qgis_core": 4,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:ddehaan@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/14a6463e74ae843efeaef9bb3a408eed?d=identicon&s=200",
+      "total_contributions": 4,
+      "thematics": {
+        "qgis_core": 4,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:perrygeo@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/5e2ab00f2cb0d7a7eacbcace23c9492c?d=identicon&s=200",
+      "total_contributions": 4,
+      "thematics": {
+        "qgis_core": 4,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:schulung02@think-01.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/96032f27c4b093cbde1dc84f02cefe81?d=identicon&s=200",
+      "total_contributions": 4,
+      "thematics": {
+        "documentation": 4,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:dodobas@geoinfo.geof.hr",
+      "avatar_url": "https://www.gravatar.com/avatar/a409bea61d1c573ccc0ffb46d4ce8dda?d=identicon&s=200",
+      "total_contributions": 4,
+      "thematics": {
+        "web_sites": 4
+      }
+    },
+    {
       "login": "florentfougeres",
       "avatar_url": "https://avatars.githubusercontent.com/u/36446612?u=4a3cb39618c73675d7d598abea2240880b88f381&v=4",
       "total_contributions": 3,
@@ -3460,7 +4619,7 @@
     },
     {
       "login": "antoniolocandro",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4627073?u=0e3147517a9f1406cf19bd4910f932b2378d21c8&v=4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4627073?u=77305a26243945d851da26411d3d87523219171a&v=4",
       "total_contributions": 3,
       "thematics": {
         "qgis_core": 2,
@@ -3859,16 +5018,6 @@
       }
     },
     {
-      "login": "Franc-Brs",
-      "avatar_url": "https://avatars.githubusercontent.com/u/79576081?u=815c619183eec0413344e94827d123b226136dda&v=4",
-      "total_contributions": 3,
-      "thematics": {
-        "qgis_core": 3,
-        "documentation": 0,
-        "web_sites": 0
-      }
-    },
-    {
       "login": "vpicavet",
       "avatar_url": "https://avatars.githubusercontent.com/u/76112?v=4",
       "total_contributions": 3,
@@ -3906,6 +5055,234 @@
         "documentation": 3,
         "web_sites": 0,
         "qgis_core": 0
+      }
+    },
+    {
+      "login": "email:patteann@oreognstate.edu",
+      "avatar_url": "https://www.gravatar.com/avatar/f27f02856ac99a26a11052836e29e663?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:tim@kartoza.com.com",
+      "avatar_url": "https://www.gravatar.com/avatar/80cac2105b7ebf17a34038cee9e8be09?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:lombardi@customcut.ch",
+      "avatar_url": "https://www.gravatar.com/avatar/52ca8b2a223bce91f9ff94999e7b2366?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:tom@palan.at",
+      "avatar_url": "https://www.gravatar.com/avatar/6381cc3627296a750fa539e56dd90382?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:janosch@earthx.com",
+      "avatar_url": "https://www.gravatar.com/avatar/d3410077b1a5b17c6177c4da37c2ebb4?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:jean-daniel.lomenede@eure.gouv.fr",
+      "avatar_url": "https://www.gravatar.com/avatar/3244a5e247be3207fc770fcd5f188161?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:jef@FARAMIR",
+      "avatar_url": "https://www.gravatar.com/avatar/572afa55568f41cadb875a3d37642a84?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:apasottis@boundlessgeo.com",
+      "avatar_url": "https://www.gravatar.com/avatar/589d532a50f79614b382b96213885e91?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:gillian.milani@camptocamp.com",
+      "avatar_url": "https://www.gravatar.com/avatar/f01237c002d114a84f32c9482d66b1af?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:sylvain.maillard@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/2ba115d79355bd602c59576032b2fbcb?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:regis.haubourg@eau-adour-garonne.fr",
+      "avatar_url": "https://www.gravatar.com/avatar/ff9e032a2bec938bb2c1bbd80dfbc9e4?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:rmgu@grasdk.com",
+      "avatar_url": "https://www.gravatar.com/avatar/fba4a0a1773145a9a951ceb48ab4d4ca?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:stefan@xanadu.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/add1467def97acd49088112f1ba59d53?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:vania@nivalis.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/5fe1712c5ee5c2cc8a51601c9bf08635?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "qgis_core": 3,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:info@umwelt-it",
+      "avatar_url": "https://www.gravatar.com/avatar/13573ac1866d245b3b3a8cc838d4b446?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "documentation": 3,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:mizmay@Stephanies-MacBook-Air.local",
+      "avatar_url": "https://www.gravatar.com/avatar/96ee761d0a95091f58de1bca61eec4d0?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "documentation": 3,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:stephane.guillou@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/cd09d03017e8d20f44e121445a59b1e5?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "documentation": 3,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:peter@3xe.co.uk",
+      "avatar_url": "https://www.gravatar.com/avatar/b08b057309c110ec981b8fa2ba019b0a?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "documentation": 3,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:nagase@georepublic.co.jp",
+      "avatar_url": "https://www.gravatar.com/avatar/0c7cbe8c7baf460c2757d4ac45614298?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "documentation": 3,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:paolo.corti@jrc.ec.europa.eu",
+      "avatar_url": "https://www.gravatar.com/avatar/3cbfaa3c62269915658017bb1c4b64c4?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "documentation": 3,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:dassau@gbdlaptop.speedport.ip",
+      "avatar_url": "https://www.gravatar.com/avatar/35db93088cf250fbda1113478586fdcb?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "documentation": 3,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:djq@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/07e8c1515b77fe5e61c34fce480dd699?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "documentation": 3,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:christian@kartoza.com",
+      "avatar_url": "https://www.gravatar.com/avatar/982f71c9c1e3d3c858588381cd36c4c2?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "web_sites": 3
+      }
+    },
+    {
+      "login": "email:github@grvhi.com",
+      "avatar_url": "https://www.gravatar.com/avatar/806b6022853663478e609013ad940fce?d=identicon&s=200",
+      "total_contributions": 3,
+      "thematics": {
+        "web_sites": 3
       }
     },
     {
@@ -4190,7 +5567,7 @@
     },
     {
       "login": "dhdeangelis",
-      "avatar_url": "https://avatars.githubusercontent.com/u/51515911?u=d06768ba43e8a346b416ba96efd894161fe989df&v=4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51515911?u=818d5769194439b338806059501002baf67d07bf&v=4",
       "total_contributions": 2,
       "thematics": {
         "qgis_core": 2,
@@ -4799,6 +6176,261 @@
       }
     },
     {
+      "login": "email:mingshunchen138@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/5dad01f7bd6d8177c69b7fb1b76319c6?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:ughur.alakbarov@rwth-aachen.de",
+      "avatar_url": "https://www.gravatar.com/avatar/f8ea9e46fc02e9eeb2504e4386856c68?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:sebastian@S-Laptop.fritz.box",
+      "avatar_url": "https://www.gravatar.com/avatar/274006ca1fe93267a161c9dcf50c4d13?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:franck.houssen@sbg-systems.com",
+      "avatar_url": "https://www.gravatar.com/avatar/c0be36d957b82785f3f715221a4bd9d4?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:mathias@scalgo.com",
+      "avatar_url": "https://www.gravatar.com/avatar/d5f3e70e05059110d8fbcad86515c7a5?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:cedric.traizet@c-s.fr",
+      "avatar_url": "https://www.gravatar.com/avatar/d9c0e1a6e54ccf38e3d418d25470b890?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:marek.urban@lutraconsulting.co.uk",
+      "avatar_url": "https://www.gravatar.com/avatar/21f2eaf3a573be370984b217f7a03664?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:kyngchaos@Sumomo.attlocal.net",
+      "avatar_url": "https://www.gravatar.com/avatar/452679cbe0677c64aceec3a56eccb0e3?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:alexis.polti@telecom-paristech.fr",
+      "avatar_url": "https://www.gravatar.com/avatar/fe255aaa3bf852f2780134e7b8de016a?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:siki@agt.bme.hu",
+      "avatar_url": "https://www.gravatar.com/avatar/1dd89beae6ec98f063c4d78eee8fe5d5?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "idan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22723?u=08ce8dbf02b0418e853c172494e28e7b8bcc6817&v=4",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:th.arnold@gmx.net",
+      "avatar_url": "https://www.gravatar.com/avatar/f139c97a367fdd9651d54c4c4d2120cd?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:root@kompas.rygveda.lt",
+      "avatar_url": "https://www.gravatar.com/avatar/27294071e088dec66b390ce17114b8c4?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:info at borysjurgiel dot pl",
+      "avatar_url": "https://www.gravatar.com/avatar/98347d224705e853141efc7eb1a44367?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:gio@sibirica.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/70e4a4a27d54b4d765e8f9b203ae19e0?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:mathieu@appart.numericable.fr",
+      "avatar_url": "https://www.gravatar.com/avatar/706649cee3d888c72462a209abe22769?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:sal.larosa@libero.it",
+      "avatar_url": "https://www.gravatar.com/avatar/50ccf165b9544232d1d4f30cab488bec?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:polymonic@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/56a0a4647e31182eec7d8ab5adc2423c?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:macho@void.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/fdf8c7dcc331950d113108fcdceaed9b?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:warmerdam@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/b2e07e11e80fe834324e13c933999cd1?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:godofredo@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/0a1af4f6b2b69a2e811a861adbb967ad?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "qgis_core": 2,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:gustrimaille@ahoo.fr",
+      "avatar_url": "https://www.gravatar.com/avatar/0262345c4a5eb8d317fe14fed8c27bc8?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "documentation": 2,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:egoddard@memphis.edu",
+      "avatar_url": "https://www.gravatar.com/avatar/60b5794a06835ad64e3b48079d81afa3?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "documentation": 2,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:matakuka@users.noreply.github.com",
+      "avatar_url": "https://www.gravatar.com/avatar/bf450920a6719b8989d40061443d999d?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "documentation": 2,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:a.neumann@carto.n",
+      "avatar_url": "https://www.gravatar.com/avatar/081b2223c76d7dce7b9ad93c2b628f91?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "documentation": 2,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:dassau@nature.speedport.ip",
+      "avatar_url": "https://www.gravatar.com/avatar/8a0be41aa3ff20503b155913325cd6b1?d=identicon&s=200",
+      "total_contributions": 2,
+      "thematics": {
+        "documentation": 2,
+        "web_sites": 0
+      }
+    },
+    {
       "login": "Trexerx",
       "avatar_url": "https://avatars.githubusercontent.com/u/105320264?v=4",
       "total_contributions": 1,
@@ -4910,7 +6542,7 @@
     },
     {
       "login": "AlexanderWillner",
-      "avatar_url": "https://avatars.githubusercontent.com/u/307605?u=1ac11662033269f1853ca8ba4b65b6fca699c071&v=4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/307605?u=8a90eca267fbe3e315acbe12d6c974ec4aed7732&v=4",
       "total_contributions": 1,
       "thematics": {
         "qgis_core": 1,
@@ -5220,7 +6852,7 @@
     },
     {
       "login": "simonokeefe",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3085124?u=ba783c9038a41f0c504b3253347088a779d683f5&v=4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3085124?v=4",
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
@@ -6030,7 +7662,7 @@
     },
     {
       "login": "neilnaveen",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42328488?u=2fb6c944e18bb2ffb9a6c115e0d6cc7daf6e858f&v=4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42328488?v=4",
       "total_contributions": 1,
       "thematics": {
         "qgis_core": 1,
@@ -7486,6 +9118,855 @@
         "documentation": 1,
         "web_sites": 0,
         "qgis_core": 0
+      }
+    },
+    {
+      "login": "email:r.abdullaev@argun-soft.ru",
+      "avatar_url": "https://www.gravatar.com/avatar/d398c8beffc28da3c783ad1b8225aac5?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:werner.macho@iqsoft.com",
+      "avatar_url": "https://www.gravatar.com/avatar/0962e7ae687d598da47b2e64b4ed836a?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:reflectored@pm.me",
+      "avatar_url": "https://www.gravatar.com/avatar/eaa6359a4fdc5e2238e3ce86cea20089?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:volker.enderlein@ifm-chemnitz.de",
+      "avatar_url": "https://www.gravatar.com/avatar/f664bd8d5de8a88a13adde323cf78c06?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:andres.teruel@elecnor.es",
+      "avatar_url": "https://www.gravatar.com/avatar/9c5be216c7177bcb63063b3df5bd2d72?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:uclaros@debian-BULLSEYE-live-builder-AMD64",
+      "avatar_url": "https://www.gravatar.com/avatar/6e75b973c550114212197700e970178b?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:lop@skogoglandskap.no",
+      "avatar_url": "https://www.gravatar.com/avatar/070323cf7ca8fe03cef1d7f8ea6f7be8?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:joepgevaert@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/07d3734cbd679698bb2995d9b4c24cd1?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:paulo@ecodiv.org",
+      "avatar_url": "https://www.gravatar.com/avatar/219f50b84a0dd3ad01d02378930bd8e5?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "mrecknagel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/938185?v=4",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "unknown",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44306450?u=fa1992ba41ec47e140f8cae5e743d43cc9de0b62&v=4",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:raul.barbosa@ibge.gov.br",
+      "avatar_url": "https://www.gravatar.com/avatar/48071f4a423ea52e005e3e669ddd98f1?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:thomas.baumann@regiodata-gmbh.de",
+      "avatar_url": "https://www.gravatar.com/avatar/4c9c5049f6f06d19b54acc7711a84284?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:roland@siegbert.info",
+      "avatar_url": "https://www.gravatar.com/avatar/ce3d8db4c76fb1cf10508e612a50c0f2?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:alban.kraus@tulleagglo.fr",
+      "avatar_url": "https://www.gravatar.com/avatar/88f9bac95488f6fb35560cb57420a0d2?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:jon@sellouts.org",
+      "avatar_url": "https://www.gravatar.com/avatar/db33daa4b99c0912f1f483f53b3fdbec?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:konst@sar7.cmgd.ru",
+      "avatar_url": "https://www.gravatar.com/avatar/1f364084948c23f483e07631e6e85dd1?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:assar@localhost.localdomain",
+      "avatar_url": "https://www.gravatar.com/avatar/f572f2f4366ee92ffb1604f488afb2df?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:simon@simonsouth.ca",
+      "avatar_url": "https://www.gravatar.com/avatar/6fc3c297f57b69e600da0e011855ef48?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:35916322+garnservo@users.noreply.github.com",
+      "avatar_url": "https://www.gravatar.com/avatar/f86cfc2bdf8052c5b92c8a4758621cfa?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:nyall@localhost.localdomain",
+      "avatar_url": "https://www.gravatar.com/avatar/7cae2280fe2515f2faa5abf680cf7851?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:rashad.kanavath.email.com",
+      "avatar_url": "https://www.gravatar.com/avatar/8ae8f0672cebf2f844f2ed11e2227731?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:kunda@scribus.net",
+      "avatar_url": "https://www.gravatar.com/avatar/471af12e2d7d5951e25bed089dd29ba2?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:frank@kapernikov.com",
+      "avatar_url": "https://www.gravatar.com/avatar/486e757752f36320a3256df12050c6c8?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:theuns.heydenrych@za.saabgroup.com",
+      "avatar_url": "https://www.gravatar.com/avatar/7fa0fc77e8991681326de730f115bc8e?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:marti.angelats@psig.cat",
+      "avatar_url": "https://www.gravatar.com/avatar/f862bb19d28999c62099f3de5ead535f?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:nyall@ender.local",
+      "avatar_url": "https://www.gravatar.com/avatar/454ea7b535133ea871fd8992d2356245?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:sfkeller@hsr.ch",
+      "avatar_url": "https://www.gravatar.com/avatar/f1148e1a46015d4d5373127f15893d9b?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:etienne@Etiennes-MacBook-Pro.local",
+      "avatar_url": "https://www.gravatar.com/avatar/3b0e62363a42bda37daf937e318ae064?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:medspx@users.noreply.github.com",
+      "avatar_url": "https://www.gravatar.com/avatar/cac6de896e7bd39892e2c6234deb79b9?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:marco@.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/9522a3457eb3a323db1387d4177e785b?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:nickburkhart@Nicks-iMac.local",
+      "avatar_url": "https://www.gravatar.com/avatar/b5092ae90587e31c084a049bcda120da?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:coder@tuxfamily.org",
+      "avatar_url": "https://www.gravatar.com/avatar/e385dc2b3f03632e9ffdab48407e2227?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:aroche@nordex-online.com",
+      "avatar_url": "https://www.gravatar.com/avatar/a85367b02d8f80fc7e734c50d0c72c45?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:tobias.reber@bd.so.ch",
+      "avatar_url": "https://www.gravatar.com/avatar/dd43eb0ff98ccaa9e9cd1f652831ae18?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:iedwards.pub@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/dcd99bb74d2c19f81e6d3e97631e2692?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:neteler@oboe.localdomain",
+      "avatar_url": "https://www.gravatar.com/avatar/c2cfecbe805d5a2db575a5a79aae7da6?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:ajph@UOS-204986.soton.ac.uk",
+      "avatar_url": "https://www.gravatar.com/avatar/e3545e3923503b5abcf102e4e151c9f2?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:kiith-sa@solydxk",
+      "avatar_url": "https://www.gravatar.com/avatar/6dc2276a8f17f3f49ba4f9fafaf15a52?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:tomas.krecmer@tmapy.cz",
+      "avatar_url": "https://www.gravatar.com/avatar/dc9fef94a4434c8ac80afe9236245196?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:alicht@ser.asu.edu",
+      "avatar_url": "https://www.gravatar.com/avatar/04ba7c90646485f826d1903a2c3ccf11?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:ma7730@debian.matteo",
+      "avatar_url": "https://www.gravatar.com/avatar/fada3682dff3c701ca33afa450cb0291?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:laurent.defert@bioecoforests.com",
+      "avatar_url": "https://www.gravatar.com/avatar/a80aaf9a8663be95eabb3804d60603b7?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:simon.okeefe@groundtruth.com.au",
+      "avatar_url": "https://www.gravatar.com/avatar/66fec8449a9c6228f6ad4a515d9f10ec?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:cartographie@hotmail.fr",
+      "avatar_url": "https://www.gravatar.com/avatar/92c2a90a0224ebd630bfc75a06f02c49?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:daniel@gauss.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/408638aadc7c70312cf2431deeeaed04?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:laurent@bioecoforests.com",
+      "avatar_url": "https://www.gravatar.com/avatar/0d047e1d22c1920e9b287e754ce979a7?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:lechner@webgis.de",
+      "avatar_url": "https://www.gravatar.com/avatar/7854c708c0b28296ee6df62ed2e6f6bf?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:orion@orion-Ut.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/621d054357fa636c6588aaf2326a0de1?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:1022tentotwo@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/6384ab55fab31bbe4df8ebdc6d796e6b?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:matteo@ivfl-linux-matteo.ivfl.boku.ac.at",
+      "avatar_url": "https://www.gravatar.com/avatar/e6c69ceae8d15ec6c6e06fb43cbc9d6f?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:ben@ben-desktop.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/1c5d505c00d02af6379b9db847f3de95?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:kk@kk-office.gslwd",
+      "avatar_url": "https://www.gravatar.com/avatar/cfeaeca243ac3cbd82f99bff1e4bbda2?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:coyotte508@hotmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/3a07b5d26bf486a8d691d8ba475f33e4?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:art@teaquetzl.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/8201884f26ba56636b7067da294083de?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:brushtyler@881b9c09-3ef8-f3c2-ec3d-21d735c97f4d",
+      "avatar_url": "https://www.gravatar.com/avatar/ab6f9439bcbb27087290f27dde1285c5?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:root@faunalia.it",
+      "avatar_url": "https://www.gravatar.com/avatar/dad3f9169a6b0bbb1985f52e673d0912?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:mattwigway@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/9ad39e550e0f07de1a6495b63e02b65d?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:alister.hood@synergine.com",
+      "avatar_url": "https://www.gravatar.com/avatar/fcd379629611aa2b1978b3d3754a8710?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:woo@woo-mint.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/62c93efc46e45a243d99bc15866ca0ad?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:marco@muse.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/cd7cf36fd0dab97530284568aad38b3d?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:gostrc@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/217d5e9e33efba76044cca7fefc28f9f?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:rdmailings@duif.net",
+      "avatar_url": "https://www.gravatar.com/avatar/0cbb92a749964c18d1011ce918cb6387?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "name:Steven Mizuno",
+      "avatar_url": "https://github.com/ghost.png",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:mwalker@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/c2730b7ee1ef5cff3aed5eab84f94d0c?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:mloskot@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/7db996db7cf1b55bc27d94a68ed81733?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:spoerri@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/09df140bac04a56268ad20c03ad673f4?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:rawbytes@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/08e4b0ab88221578b65e87859536cd47?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "qgis_core": 1,
+        "documentation": 0,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:mulamajeff@tuta.io",
+      "avatar_url": "https://www.gravatar.com/avatar/688afbcef0119173ab40661ab8140c79?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:me@puter",
+      "avatar_url": "https://www.gravatar.com/avatar/571054bcc0586a7767ad92019178352e?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:peter.bathory@cartographia.hu",
+      "avatar_url": "https://www.gravatar.com/avatar/193fca8c19380b48c787ebad52f0357e?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:zimirrr@mail.ru",
+      "avatar_url": "https://www.gravatar.com/avatar/ba81aa79d39f7ccb8f30b17044e4c036?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:harrissou@Mac-mini-Harrissou.local",
+      "avatar_url": "https://www.gravatar.com/avatar/57e3ce21316c7cb92828a1d7bca1368b?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:topi@gispo.fi",
+      "avatar_url": "https://www.gravatar.com/avatar/0fdbc7fd3dd18830001015d2096708ad?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:root@qgis.org",
+      "avatar_url": "https://www.gravatar.com/avatar/ee5d6215a9c0e6ba25af3decf3506f29?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:lpirelli@boundlessgeo.com",
+      "avatar_url": "https://www.gravatar.com/avatar/a9f9353c44c471114dab3be4edf8263a?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:marekwieczorek@onet.pl",
+      "avatar_url": "https://www.gravatar.com/avatar/c85133c09e8a8842da3f16aee01c599c?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:edzell_amy@yahoo.co.uk",
+      "avatar_url": "https://www.gravatar.com/avatar/75cd4ef5e314e04bcfe1a06422fcbf09?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:joaofrgaspar@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/d5d68a4bfadabf356e1c408801e7c25f?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:andrei.mirt@gmail.com",
+      "avatar_url": "https://www.gravatar.com/avatar/2f5ab150157e0927bfecacc616b34168?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:rduivenvoorde@qgis.osgeo.org",
+      "avatar_url": "https://www.gravatar.com/avatar/e59bfa1a82e4528390c12118b2f3b6b5?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:junek@localhost.(none)",
+      "avatar_url": "https://www.gravatar.com/avatar/7d89e2217ac7d8f91596b3f4a2150505?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:junek@linuxhotel101.linuxhotel.de",
+      "avatar_url": "https://www.gravatar.com/avatar/23e37ac49be4f26fe17c2393d63e6a20?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:root@itinerant.detroit",
+      "avatar_url": "https://www.gravatar.com/avatar/f8d712fe60d701e90792c98039d7fc0e?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:custard@c8812cc2-4d05-0410-92ff-de0c093fc19c",
+      "avatar_url": "https://www.gravatar.com/avatar/f09cfa997d8395ceda1e9fb4b6e75cd2?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "documentation": 1,
+        "web_sites": 0
+      }
+    },
+    {
+      "login": "email:sumandari@mediacatch.io",
+      "avatar_url": "https://www.gravatar.com/avatar/840cea355cc8879973900f66fc2f038a?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "web_sites": 1
+      }
+    },
+    {
+      "login": "email:sam@linfinti.com",
+      "avatar_url": "https://www.gravatar.com/avatar/346777d77981335df5a7302f874b7d86?d=identicon&s=200",
+      "total_contributions": 1,
+      "thematics": {
+        "web_sites": 1
       }
     },
     {
