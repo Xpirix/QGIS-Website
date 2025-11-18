@@ -5,7 +5,7 @@
     "how_to_update": "Run 'python scripts/update_individual_contributors.py --token YOUR_TOKEN'",
     "documentation": "See CONTRIBUTING.md section: Automated Content and Manual Edit Guidelines"
   },
-  "generated_at": "2025-11-17T12:28:38.031858+00:00",
+  "generated_at": "2025-11-18T03:57:12.313936+00:00",
   "total_contributors": 1004,
   "contributors": [
     {
@@ -21,10 +21,10 @@
     {
       "login": "DelazJ",
       "avatar_url": "https://avatars.githubusercontent.com/u/7983394?u=b2c76a3d83057b6f3b0ce59280ca38cfa69951cf&v=4",
-      "total_contributions": 6292,
+      "total_contributions": 6297,
       "thematics": {
         "qgis_core": 1061,
-        "documentation": 5216,
+        "documentation": 5221,
         "web_sites": 15
       }
     },
@@ -111,9 +111,9 @@
     {
       "login": "Xpirix",
       "avatar_url": "https://avatars.githubusercontent.com/u/43842786?u=0883532bbfaf23d63336096ba8dab2acd06decf3&v=4",
-      "total_contributions": 2053,
+      "total_contributions": 2054,
       "thematics": {
-        "web_sites": 2053,
+        "web_sites": 2054,
         "qgis_core": 0,
         "documentation": 0
       }
@@ -241,9 +241,9 @@
     {
       "login": "signedav",
       "avatar_url": "https://avatars.githubusercontent.com/u/28384354?u=fbbcc7055146b719fc660dd32720ef03376f9118&v=4",
-      "total_contributions": 831,
+      "total_contributions": 832,
       "thematics": {
-        "qgis_core": 830,
+        "qgis_core": 831,
         "web_sites": 1,
         "documentation": 0
       }
@@ -939,6 +939,16 @@
       }
     },
     {
+      "login": "hefniraera",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91196603?u=0e49553827b2f2774c23c65b6506a84bfd9d27c5&v=4",
+      "total_contributions": 146,
+      "thematics": {
+        "documentation": 146,
+        "web_sites": 0,
+        "qgis_core": 0
+      }
+    },
+    {
       "login": "ccrook",
       "avatar_url": "https://avatars.githubusercontent.com/u/631058?v=4",
       "total_contributions": 145,
@@ -966,16 +976,6 @@
         "qgis_core": 132,
         "documentation": 10,
         "web_sites": 0
-      }
-    },
-    {
-      "login": "hefniraera",
-      "avatar_url": "https://avatars.githubusercontent.com/u/91196603?u=0e49553827b2f2774c23c65b6506a84bfd9d27c5&v=4",
-      "total_contributions": 140,
-      "thematics": {
-        "documentation": 140,
-        "web_sites": 0,
-        "qgis_core": 0
       }
     },
     {
@@ -1024,7 +1024,8 @@
       "total_contributions": 128,
       "thematics": {
         "documentation": 128,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -1392,7 +1393,9 @@
       "avatar_url": "https://www.gravatar.com/avatar/c7d47d645ac4af95d3ecc8f413d91185?d=identicon&s=200",
       "total_contributions": 52,
       "thematics": {
-        "web_sites": 52
+        "web_sites": 52,
+        "qgis_core": 0,
+        "documentation": 0
       }
     },
     {
@@ -1410,7 +1413,9 @@
       "avatar_url": "https://www.gravatar.com/avatar/d4a2da7722f055eafb1fbca2884f85f4?d=identicon&s=200",
       "total_contributions": 50,
       "thematics": {
-        "web_sites": 50
+        "web_sites": 50,
+        "qgis_core": 0,
+        "documentation": 0
       }
     },
     {
@@ -1609,7 +1614,8 @@
       "total_contributions": 37,
       "thematics": {
         "documentation": 37,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -1617,7 +1623,9 @@
       "avatar_url": "https://www.gravatar.com/avatar/64eff295b0721bf30ce0285ad6876add?d=identicon&s=200",
       "total_contributions": 37,
       "thematics": {
-        "web_sites": 37
+        "web_sites": 37,
+        "qgis_core": 0,
+        "documentation": 0
       }
     },
     {
@@ -1806,7 +1814,8 @@
       "total_contributions": 30,
       "thematics": {
         "documentation": 3,
-        "web_sites": 27
+        "web_sites": 27,
+        "qgis_core": 0
       }
     },
     {
@@ -1895,7 +1904,8 @@
       "total_contributions": 27,
       "thematics": {
         "documentation": 27,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -2224,7 +2234,8 @@
       "total_contributions": 18,
       "thematics": {
         "documentation": 18,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -2232,7 +2243,9 @@
       "avatar_url": "https://www.gravatar.com/avatar/f9ee554fc819a63171f250c60b67e5b5?d=identicon&s=200",
       "total_contributions": 18,
       "thematics": {
-        "web_sites": 18
+        "web_sites": 18,
+        "qgis_core": 0,
+        "documentation": 0
       }
     },
     {
@@ -2320,7 +2333,9 @@
       "avatar_url": "https://www.gravatar.com/avatar/c8fdd14aa544f6b32719634955e83501?d=identicon&s=200",
       "total_contributions": 16,
       "thematics": {
-        "web_sites": 16
+        "web_sites": 16,
+        "qgis_core": 0,
+        "documentation": 0
       }
     },
     {
@@ -2419,7 +2434,18 @@
       "total_contributions": 14,
       "thematics": {
         "documentation": 14,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
+      }
+    },
+    {
+      "login": "saberraz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2649047?u=d3b45870858c94a0c0b550911281e33fa8949350&v=4",
+      "total_contributions": 14,
+      "thematics": {
+        "qgis_core": 4,
+        "documentation": 7,
+        "web_sites": 3
       }
     },
     {
@@ -2548,7 +2574,8 @@
       "total_contributions": 13,
       "thematics": {
         "documentation": 13,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -2627,7 +2654,8 @@
       "total_contributions": 12,
       "thematics": {
         "documentation": 12,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -2698,16 +2726,6 @@
         "qgis_core": 11,
         "web_sites": 0,
         "documentation": 0
-      }
-    },
-    {
-      "login": "saberraz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2649047?u=d3b45870858c94a0c0b550911281e33fa8949350&v=4",
-      "total_contributions": 11,
-      "thematics": {
-        "qgis_core": 4,
-        "documentation": 7,
-        "web_sites": 0
       }
     },
     {
@@ -2846,7 +2864,8 @@
       "total_contributions": 10,
       "thematics": {
         "documentation": 10,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -3025,7 +3044,18 @@
       "total_contributions": 9,
       "thematics": {
         "documentation": 9,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
+      }
+    },
+    {
+      "login": "Joonalai",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33314057?u=d61e279b378bcb7a88c367ba3271ea16c386aa13&v=4",
+      "total_contributions": 9,
+      "thematics": {
+        "qgis_core": 9,
+        "web_sites": 0,
+        "documentation": 0
       }
     },
     {
@@ -3096,16 +3126,6 @@
         "documentation": 8,
         "web_sites": 0,
         "qgis_core": 0
-      }
-    },
-    {
-      "login": "Joonalai",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33314057?u=d61e279b378bcb7a88c367ba3271ea16c386aa13&v=4",
-      "total_contributions": 8,
-      "thematics": {
-        "qgis_core": 8,
-        "web_sites": 0,
-        "documentation": 0
       }
     },
     {
@@ -3594,7 +3614,8 @@
       "total_contributions": 7,
       "thematics": {
         "documentation": 7,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -3602,7 +3623,9 @@
       "avatar_url": "https://www.gravatar.com/avatar/3d0628f4e43ffcee81735c1651e9bf8e?d=identicon&s=200",
       "total_contributions": 7,
       "thematics": {
-        "web_sites": 7
+        "web_sites": 7,
+        "qgis_core": 0,
+        "documentation": 0
       }
     },
     {
@@ -4031,7 +4054,8 @@
       "total_contributions": 5,
       "thematics": {
         "documentation": 5,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -4040,7 +4064,8 @@
       "total_contributions": 5,
       "thematics": {
         "documentation": 5,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -4049,7 +4074,8 @@
       "total_contributions": 5,
       "thematics": {
         "documentation": 5,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -4057,7 +4083,9 @@
       "avatar_url": "https://www.gravatar.com/avatar/d0ec6507bb49471dc70199e69a808507?d=identicon&s=200",
       "total_contributions": 5,
       "thematics": {
-        "web_sites": 5
+        "web_sites": 5,
+        "qgis_core": 0,
+        "documentation": 0
       }
     },
     {
@@ -4476,7 +4504,8 @@
       "total_contributions": 4,
       "thematics": {
         "documentation": 4,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -4484,7 +4513,9 @@
       "avatar_url": "https://www.gravatar.com/avatar/a409bea61d1c573ccc0ffb46d4ce8dda?d=identicon&s=200",
       "total_contributions": 4,
       "thematics": {
-        "web_sites": 4
+        "web_sites": 4,
+        "qgis_core": 0,
+        "documentation": 0
       }
     },
     {
@@ -5203,7 +5234,8 @@
       "total_contributions": 3,
       "thematics": {
         "documentation": 3,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -5212,7 +5244,8 @@
       "total_contributions": 3,
       "thematics": {
         "documentation": 3,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -5221,7 +5254,8 @@
       "total_contributions": 3,
       "thematics": {
         "documentation": 3,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -5230,7 +5264,8 @@
       "total_contributions": 3,
       "thematics": {
         "documentation": 3,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -5239,7 +5274,8 @@
       "total_contributions": 3,
       "thematics": {
         "documentation": 3,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -5248,7 +5284,8 @@
       "total_contributions": 3,
       "thematics": {
         "documentation": 3,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -5257,7 +5294,8 @@
       "total_contributions": 3,
       "thematics": {
         "documentation": 3,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -5266,7 +5304,8 @@
       "total_contributions": 3,
       "thematics": {
         "documentation": 3,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -5274,7 +5313,9 @@
       "avatar_url": "https://www.gravatar.com/avatar/982f71c9c1e3d3c858588381cd36c4c2?d=identicon&s=200",
       "total_contributions": 3,
       "thematics": {
-        "web_sites": 3
+        "web_sites": 3,
+        "qgis_core": 0,
+        "documentation": 0
       }
     },
     {
@@ -5282,7 +5323,9 @@
       "avatar_url": "https://www.gravatar.com/avatar/806b6022853663478e609013ad940fce?d=identicon&s=200",
       "total_contributions": 3,
       "thematics": {
-        "web_sites": 3
+        "web_sites": 3,
+        "qgis_core": 0,
+        "documentation": 0
       }
     },
     {
@@ -6391,7 +6434,8 @@
       "total_contributions": 2,
       "thematics": {
         "documentation": 2,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -6400,7 +6444,8 @@
       "total_contributions": 2,
       "thematics": {
         "documentation": 2,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -6409,7 +6454,8 @@
       "total_contributions": 2,
       "thematics": {
         "documentation": 2,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -6418,7 +6464,8 @@
       "total_contributions": 2,
       "thematics": {
         "documentation": 2,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -6427,7 +6474,8 @@
       "total_contributions": 2,
       "thematics": {
         "documentation": 2,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9806,7 +9854,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9815,7 +9864,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9824,7 +9874,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9833,7 +9884,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9842,7 +9894,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9851,7 +9904,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9860,7 +9914,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9869,7 +9924,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9878,7 +9934,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9887,7 +9944,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9896,7 +9954,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9905,7 +9964,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9914,7 +9974,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9923,7 +9984,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9932,7 +9994,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9941,7 +10004,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9950,7 +10014,8 @@
       "total_contributions": 1,
       "thematics": {
         "documentation": 1,
-        "web_sites": 0
+        "web_sites": 0,
+        "qgis_core": 0
       }
     },
     {
@@ -9958,7 +10023,9 @@
       "avatar_url": "https://www.gravatar.com/avatar/840cea355cc8879973900f66fc2f038a?d=identicon&s=200",
       "total_contributions": 1,
       "thematics": {
-        "web_sites": 1
+        "web_sites": 1,
+        "qgis_core": 0,
+        "documentation": 0
       }
     },
     {
@@ -9966,7 +10033,9 @@
       "avatar_url": "https://www.gravatar.com/avatar/346777d77981335df5a7302f874b7d86?d=identicon&s=200",
       "total_contributions": 1,
       "thematics": {
-        "web_sites": 1
+        "web_sites": 1,
+        "qgis_core": 0,
+        "documentation": 0
       }
     },
     {
