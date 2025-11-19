@@ -40,6 +40,9 @@ class GitHubContributionCounter:
             "QGIS-Certification-Website": "2025-03-19T00:00:00Z", 
             "QGIS-Changelog-Website": "2025-03-17T00:00:00Z"
         }
+        
+        # Load email-to-GitHub mappings
+        self.email_mappings = self.load_email_mappings()
 
         
     def check_rate_limit(self) -> Dict:
@@ -351,14 +354,17 @@ class GitHubContributionCounter:
                         # Handle email-based contributors (from migrated commits)
                         # Support both "email:" and old "no-github:" prefixes
                         if login.startswith("email:") or login.startswith("name:") or login.startswith("no-github:"):
-                            # Try to resolve email to GitHub login
-                            resolved_login = None
-                            if login.startswith("email:"):
-                                email = login[6:]  # Remove "email:" prefix
-                                resolved_login = self.resolve_email_to_login(email)
-                            elif login.startswith("no-github:"):
-                                email = login[10:]  # Remove "no-github:" prefix
-                                resolved_login = self.resolve_email_to_login(email)
+                            # First check manual mapping file
+                            resolved_login = self.email_mappings.get(login)
+                            
+                            if not resolved_login:
+                                # Try API-based resolution
+                                if login.startswith("email:"):
+                                    email = login[6:]  # Remove "email:" prefix
+                                    resolved_login = self.resolve_email_to_login(email)
+                                elif login.startswith("no-github:"):
+                                    email = login[10:]  # Remove "no-github:" prefix
+                                    resolved_login = self.resolve_email_to_login(email)
                             
                             if resolved_login:
                                 # Successfully resolved to GitHub account
@@ -408,17 +414,35 @@ class GitHubContributionCounter:
                     # Regular GitHub user
                     avatar_url = self.get_user_avatar(login)
                 
+                # Determine if this is a GitHub account
+                has_github = not (login.startswith("email:") or login.startswith("name:") or login.startswith("no-github:"))
+                
+                # For unmapped contributors, use clean identifier and extract email/name
+                display_login = login if has_github else self.extract_clean_identifier(login)
+                email_info, name_info = self.extract_identifier_info(login)
+                
                 # Initialize contributor if not exists
                 if login not in all_contributors:
-                    all_contributors[login] = {
-                        "login": login,
+                    contributor_data = {
+                        "login": display_login,
                         "avatar_url": avatar_url,
                         "total_contributions": 0,
-                        "thematics": {}
+                        "thematics": {},
+                        "has_github_account": has_github
                     }
+                    # Add email/name fields for unmapped contributors
+                    if email_info:
+                        contributor_data["email"] = email_info
+                    if name_info:
+                        contributor_data["name"] = name_info
+                    
+                    all_contributors[login] = contributor_data
                 else:
                     # Update avatar URL in case it changed
                     all_contributors[login]["avatar_url"] = avatar_url
+                    # Update has_github_account if it's now a real account
+                    if has_github:
+                        all_contributors[login]["has_github_account"] = True
                 
                 # Set thematic contributions and update total
                 all_contributors[login]["thematics"][thematic] = commit_count
@@ -430,6 +454,21 @@ class GitHubContributionCounter:
             self.save_contributors(all_contributors, output_path)
         
         return all_contributors
+    
+    def load_email_mappings(self) -> dict:
+        """Load email-to-GitHub login mappings from JSON file."""
+        mapping_file = "data/contributors/email_mapping.json"
+        if not os.path.exists(mapping_file):
+            print(f"Warning: Email mapping file not found: {mapping_file}")
+            return {}
+        
+        try:
+            with open(mapping_file, 'r') as f:
+                data = json.load(f)
+                return data.get("mappings", {})
+        except Exception as e:
+            print(f"Warning: Could not load email mappings: {e}")
+            return {}
     
     def resolve_email_to_login(self, email: str) -> str:
         """
@@ -538,6 +577,57 @@ class GitHubContributionCounter:
         
         with open(output_path, 'w') as f:
             json.dump(result, f, indent=2, ensure_ascii=False)
+    
+    def extract_clean_identifier(self, login: str) -> str:
+        """Extract a clean identifier from email: or name: prefixed logins."""
+        if login.startswith("email:"):
+            email = login[6:]  # Remove "email:" prefix
+            # Extract username before @
+            if "@" in email:
+                return email.split("@")[0]
+            return email
+        elif login.startswith("name:"):
+            return login[5:]  # Remove "name:" prefix
+        elif login.startswith("no-github:"):
+            email = login[10:]  # Remove "no-github:" prefix
+            if "@" in email:
+                return email.split("@")[0]
+            return email
+        return login
+    
+    def extract_identifier_info(self, login: str) -> tuple:
+        """Extract email and name from login identifier.
+        Returns (email, name) tuple where unused values are None.
+        """
+        if login.startswith("email:") or login.startswith("no-github:"):
+            prefix_len = 6 if login.startswith("email:") else 10
+            email_part = login[prefix_len:]
+            # Extract username before @
+            if "@" in email_part:
+                username = email_part.split("@")[0]
+                return (email_part, username)
+            return (email_part, None)
+        elif login.startswith("name:"):
+            name = login[5:]  # Remove "name:" prefix
+            return (None, name)
+        return (None, None)
+    
+    def extract_identifier_info(self, login: str) -> tuple:
+        """Extract email and name from login identifier.
+        Returns (email, name) tuple where unused values are None.
+        """
+        if login.startswith("email:") or login.startswith("no-github:"):
+            prefix_len = 6 if login.startswith("email:") else 10
+            email_part = login[prefix_len:]
+            # Extract username before @
+            if "@" in email_part:
+                username = email_part.split("@")[0]
+                return (email_part, username)
+            return (email_part, None)
+        elif login.startswith("name:"):
+            name = login[5:]  # Remove "name:" prefix
+            return (None, name)
+        return (None, None)
     
     def is_bot_login(self, login: str) -> bool:
         """Check if GitHub login is a bot."""
