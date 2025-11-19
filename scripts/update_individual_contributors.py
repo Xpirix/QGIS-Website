@@ -417,25 +417,15 @@ class GitHubContributionCounter:
                 # Determine if this is a GitHub account
                 has_github = not (login.startswith("email:") or login.startswith("name:") or login.startswith("no-github:"))
                 
-                # For unmapped contributors, use clean identifier and extract email/name
-                display_login = login if has_github else self.extract_clean_identifier(login)
-                email_info, name_info = self.extract_identifier_info(login)
-                
                 # Initialize contributor if not exists
                 if login not in all_contributors:
                     contributor_data = {
-                        "login": display_login,
+                        "login": login,
                         "avatar_url": avatar_url,
                         "total_contributions": 0,
                         "thematics": {},
                         "has_github_account": has_github
                     }
-                    # Add email/name fields for unmapped contributors
-                    if email_info:
-                        contributor_data["email"] = email_info
-                    if name_info:
-                        contributor_data["name"] = name_info
-                    
                     all_contributors[login] = contributor_data
                 else:
                     # Update avatar URL in case it changed
@@ -595,39 +585,6 @@ class GitHubContributionCounter:
             return email
         return login
     
-    def extract_identifier_info(self, login: str) -> tuple:
-        """Extract email and name from login identifier.
-        Returns (email, name) tuple where unused values are None.
-        """
-        if login.startswith("email:") or login.startswith("no-github:"):
-            prefix_len = 6 if login.startswith("email:") else 10
-            email_part = login[prefix_len:]
-            # Extract username before @
-            if "@" in email_part:
-                username = email_part.split("@")[0]
-                return (email_part, username)
-            return (email_part, None)
-        elif login.startswith("name:"):
-            name = login[5:]  # Remove "name:" prefix
-            return (None, name)
-        return (None, None)
-    
-    def extract_identifier_info(self, login: str) -> tuple:
-        """Extract email and name from login identifier.
-        Returns (email, name) tuple where unused values are None.
-        """
-        if login.startswith("email:") or login.startswith("no-github:"):
-            prefix_len = 6 if login.startswith("email:") else 10
-            email_part = login[prefix_len:]
-            # Extract username before @
-            if "@" in email_part:
-                username = email_part.split("@")[0]
-                return (email_part, username)
-            return (email_part, None)
-        elif login.startswith("name:"):
-            name = login[5:]  # Remove "name:" prefix
-            return (None, name)
-        return (None, None)
     
     def is_bot_login(self, login: str) -> bool:
         """Check if GitHub login is a bot."""
