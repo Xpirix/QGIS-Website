@@ -9,6 +9,7 @@ import argparse
 import json
 import shutil
 import os
+import re
 import atoma
 from dateutil.parser import parse as date_parse
 try:
@@ -16,6 +17,35 @@ try:
 except ImportError:
     from urllib.parse import urlparse
 from scripts.resize_image import resize_image
+
+def sanitize_filename(filename):
+    """
+    Sanitize a filename to prevent path traversal attacks.
+    Removes any path separators and only allows alphanumeric characters, 
+    hyphens, underscores, and dots (but not at the start).
+    """
+    # Remove any path separators
+    filename = os.path.basename(filename)
+    # Remove leading dots and path separators
+    filename = filename.lstrip('.').lstrip('/')
+    # Only allow safe characters: alphanumeric, dash, underscore, and single dots
+    filename = re.sub(r'[^a-zA-Z0-9._-]', '_', filename)
+    # Prevent double dots
+    filename = re.sub(r'\.\.+', '.', filename)
+    # Ensure filename is not empty after sanitization
+    if not filename:
+        filename = 'default'
+    return filename
+
+def sanitize_extension(extension):
+    """
+    Sanitize a file extension to prevent path traversal attacks.
+    Properly handles the leading dot in extensions.
+    """
+    if extension.startswith('.'):
+        return '.' + sanitize_filename(extension[1:])
+    else:
+        return sanitize_filename(extension)
 
 ### Funders
 def fetch_funders(url: str, past_members=False):
@@ -27,7 +57,7 @@ def fetch_funders(url: str, past_members=False):
     data = json.loads(response.text)
     items = data["rss"]["channel"]["item"]
     for item in items:
-        member_slug = item["slug"]
+        member_slug = sanitize_filename(item["slug"])
         markdown_filename = f"content/funders/{member_slug}.md"
         # Don't overwrite existing members
         # when fetching past members
@@ -48,8 +78,9 @@ def fetch_funders(url: str, past_members=False):
 
         path = urlparse(image_url).path
         image_ext = os.path.splitext(path)[1]
-        image_name = "%s.%s" % (member_slug, image_ext)
-        image_name = image_name.replace("..",".")
+        # Sanitize the extension to prevent path traversal
+        image_ext = sanitize_extension(image_ext)
+        image_name = f"{member_slug}{image_ext}"
 
         content = f"""---
 # ⚠️  AUTOMATED FILE - DO NOT EDIT MANUALLY!
@@ -108,9 +139,10 @@ def fetch_flickr_screenshots(showcase_type, rss_url):
 
         path = urlparse(image_url).path
         image_ext = os.path.splitext(path)[1]
-        name = os.path.basename(os.path.normpath(image_url))
-        image_name = "%s.%s" % (name, image_ext)
-        image_name = image_name.replace("..",".")
+        # Sanitize the extension to prevent path traversal
+        image_ext = sanitize_extension(image_ext)
+        name = sanitize_filename(os.path.basename(os.path.normpath(image_url)))
+        image_name = f"{name}{image_ext}"
 
         entry_date = entry.published.strftime("%Y-%m-%d")
         print(entry_date)

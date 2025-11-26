@@ -99,7 +99,8 @@ function populateResults(results) {
         var tags = "";
         if (value.item.tags) {
             value.item.tags.forEach(function (element) {
-                tags += "<span class='tag is-warning'><a href='/tags/" + element + "'>" + element + "</a></span> ";
+                var escapedElement = escapeHtml(element);
+                tags += "<span class='tag is-warning'><a href='/tags/" + escapedElement + "'>" + escapedElement + "</a></span> ";
             });
         }
         
@@ -107,14 +108,15 @@ function populateResults(results) {
         var categories = "";
         if (value.item.categories) {
             value.item.categories.forEach(function (element) {
-                categories += "<span class='tag is-danger'><a href='/categories/" + element + "'>" + element + "</a></span> ";
+                var escapedElement = escapeHtml(element);
+                categories += "<span class='tag is-danger'><a href='/categories/" + escapedElement + "'>" + escapedElement + "</a></span> ";
             });
         }
 
         // Render the output using the template
         var output = render(templateDefinition, {
             key: key,
-            title: value.item.title,
+            title: escapeHtml(value.item.title),
             link: value.item.permalink,
             tags: tags,
             categories: categories,
@@ -148,7 +150,7 @@ function createSnippet(contents, tokens) {
             end = Math.min(contents.length, tokenPosition + snippetLength - 50);
         }
     });
-    let snippet = contents.substring(start, end);
+    let snippet = escapeHtml(contents.substring(start, end));
     if (start > 0) {
         snippet = '&hellip;' + snippet;
     }
@@ -192,4 +194,17 @@ function hide(elem) {
 }
 function param(name) {
     return decodeURIComponent((location.search.split(name + '=')[1] || '').split('&')[0]).replace(/\+/g, ' ');
+}
+function escapeHtml(text) {
+    if (text == null || text === undefined) {
+        return '';
+    }
+    var map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+    };
+    return String(text).replace(/[&<>"']/g, function(m) { return map[m]; });
 }
