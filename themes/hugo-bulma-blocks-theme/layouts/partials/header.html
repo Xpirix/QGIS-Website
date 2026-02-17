@@ -35,6 +35,11 @@
             "
         />
 
+        <!-- Prevent indexing on staging environment -->
+        {{ if eq (getenv "HUGO_ENV") "staging" }}
+            <meta name="robots" content="noindex, nofollow">
+        {{ end }}
+
         {{ hugo.Generator }}
         <meta name="twitter:card" content="summary" />
         {{ with .Site.Params.twitter }}
