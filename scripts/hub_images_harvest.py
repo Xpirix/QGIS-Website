@@ -2,10 +2,52 @@
 # -*- coding: utf-8 -*-
 
 import os
+import re
 import requests
 import shutil
 from urllib.parse import urlparse
 import json
+
+def sanitize_filename(filename):
+    """
+    Sanitize a filename to prevent path traversal attacks.
+    Removes any path separators and only allows alphanumeric characters, 
+    hyphens, underscores, and dots (but not at the start).
+    """
+    # Remove any path separators
+    filename = os.path.basename(filename)
+    # Remove leading dots and path separators
+    filename = filename.lstrip('.').lstrip('/')
+    # Only allow safe characters: alphanumeric, dash, underscore, and single dots
+    filename = re.sub(r'[^a-zA-Z0-9._-]', '_', filename)
+    # Prevent double dots
+    filename = re.sub(r'\.\.+', '.', filename)
+    # Ensure filename is not empty after sanitization
+    if not filename:
+        filename = 'default'
+    return filename
+
+def sanitize_extension(extension):
+    """
+    Sanitize a file extension to prevent path traversal attacks.
+    Properly handles the leading dot in extensions.
+    """
+    if extension.startswith('.'):
+        return '.' + sanitize_filename(extension[1:])
+    else:
+        return sanitize_filename(extension)
+
+def validate_uuid(uuid_string):
+    """
+    Validate that a string is a valid UUID format.
+    Returns the UUID if valid, otherwise returns a sanitized version.
+    """
+    # UUID format: 8-4-4-4-12 hexadecimal characters
+    uuid_pattern = re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$', re.IGNORECASE)
+    if uuid_pattern.match(str(uuid_string)):
+        return uuid_string
+    # If not a valid UUID, sanitize it
+    return sanitize_filename(str(uuid_string))
 
 class HubHarvester:
   def __init__(self, resource_type, api_url, output_dir):
@@ -53,7 +95,10 @@ class HubHarvester:
     # Parse the thumbnail URL to get the file name
     path = urlparse(thumbnail_url).path
     image_ext = os.path.splitext(path)[1]
-    image_name = f"{uuid}{image_ext}"
+    # Validate UUID format and sanitize extension to prevent path traversal
+    uuid_safe = validate_uuid(uuid)
+    image_ext_safe = sanitize_extension(image_ext)
+    image_name = f"{uuid_safe}{image_ext_safe}"
 
     # Download the thumbnail
     image_path = os.path.join(self.output_dir, image_name)
@@ -86,7 +131,7 @@ showcase: "{self.resource_type}"
 ---
 """
     # Write the markdown file
-    md_filename = os.path.join(self.output_dir, f"{uuid}.md")
+    md_filename = os.path.join(self.output_dir, f"{uuid_safe}.md")
     with open(md_filename, "w", encoding="utf-8") as f:
       f.write(content)
       print(f"{self.resource_type.capitalize()} markdown file created: {md_filename}")
